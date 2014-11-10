@@ -1,0 +1,12 @@
+# Site settings
+title: tl;drCode
+email: webmaster@tldrcode.com
+description: > # this means to ignore newlines until "baseurl:"
+  tl;dr Code provides quick reference to multiple coding languages and libraries.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tldrcode.com" # the base hostname & protocol for your site
+twitter_username: tldrcode
+github_username:  tldrcode
+
+# Build settings
+markdown: kramdown
