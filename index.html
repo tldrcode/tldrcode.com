@@ -2,16 +2,8 @@
 layout: home
 title: Home
 ---
-<body class="homepage">
+{% include banner.html %}
 
-  {% include header.html %}
+{% include languages.html %}
 
-  {% include banner.html %}
-
-  {% include languages.html %}
-
-  {% include portfolio.html %}
-
-  {% include footer.html %}
-
-</body>
+{% include portfolio.html %}
