@@ -1,0 +1,417 @@
+/*
+	Polaris by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+		line-height: 1.75em;
+		font-size: 11pt;
+		letter-spacing: 0;
+	}
+
+	body
+	{
+		padding: 0;
+	}
+
+	h2, h3, h4, h5, h6
+	{
+		line-height: 1.2em;
+		font-size: 1.5em;
+	}
+
+	p
+	{
+		text-align: justify;
+	}
+
+	section,
+	article,
+	.row > section,
+	.row > article
+	{
+		margin-bottom: 1em;
+	}
+
+	section > :first-child,
+	article > :first-child
+	{
+		margin-top: 0 !important;
+	}
+
+	section:first-child,
+	article:first-child
+	{
+		margin-top: 0 !important;
+	}
+	
+	form
+	{
+		width: 100%;
+	}
+
+	header
+	{
+		text-align: center;
+	}
+		
+		.homepage header
+		{
+		}
+	
+		header h2
+		{
+			font-size: 1.6em;
+		}
+		
+		header .byline
+		{
+			font-size: 1.1em;
+		}
+
+		ul.style1
+		{
+		}	
+		
+			ul.style1 .left
+			{
+				padding: 0.35em 0em;
+			}
+		
+			ul.style1 .right
+			{
+				padding: 1.5em 1.5em 1.5em 1.5em;
+				font-size: 1em;
+			}
+
+			ul.style1 .icon
+			{
+				display: block;
+				line-height: 2em;
+				top: 0.30em;
+			}
+
+		ul.icons
+		{
+			font-size: 1em;
+		}
+
+		ul.info p
+		{
+			text-align: center !important;
+		}
+		
+		.button
+		{
+			width: 100%;
+			max-width: 320px;
+		}	
+
+		.button-alt
+		{
+		}	
+
+		form
+		{
+		}
+			
+			form .button
+			{
+				width: 100% !important;
+			}
+
+
+/*********************************************************************************/
+/* UI                                                                            */
+/*********************************************************************************/
+
+	#titleBar
+	{
+		background: none;
+	}
+
+		#titleBar .title
+		{
+			display: none;
+		}
+
+		#titleBar .toggle
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 80px;
+			height: 60px;
+		}
+
+			#titleBar .toggle:before
+			{
+				content: '';
+				position: absolute;
+				left: 7px;
+				top: 7px;
+				background: rgba(0,0,0,0.2);
+				width: 70px;
+				height: 44px;
+				border-radius: 4px;
+			}
+
+			#titleBar .toggle:after
+			{
+				content: '';
+				display: block;
+				width: 20px;
+				height: 12px;
+				position: absolute;
+				left: 32px;
+				top: 23px;
+				background: url('images/toggle.svg') 0px 0px no-repeat;
+				opacity: 0.7;
+			}
+
+			#titleBar .toggle:active:after
+			{
+				opacity: 0.9;
+			}
+
+	#navPanel
+	{
+		background: #1d1d1d;
+	}
+
+		#navPanel .link
+		{
+			display: block;
+			color: #888;
+			text-decoration: none;
+			height: 44px;
+			line-height: 44px;
+			border-top: solid 1px #555;
+			border-color: rgba(255,255,255,.05);
+			padding: 0 1em 0 1em;
+			letter-spacing: 0.10em;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.95em;
+		}
+		
+			#navPanel .link:first-child
+			{
+				border-top: 0;
+			}
+			
+			#navPanel .link.depth-0
+			{
+				color: #fff;
+			}
+
+			#navPanel .indent-1 { display: inline-block; width: 1em; }
+			#navPanel .indent-2 { display: inline-block; width: 2em; }
+			#navPanel .indent-3 { display: inline-block; width: 3em; }
+			#navPanel .indent-4 { display: inline-block; width: 4em; }
+			#navPanel .indent-5 { display: inline-block; width: 5em; }
+			#navPanel .depth-0 { color: #fff; }
+			
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		text-align: center;
+		padding: 1.5em 0 3em 0;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+	}
+
+		#logo h1
+		{
+				display: block;
+				text-align: center;
+		}
+		
+			#logo h1 a
+			{
+				position: inherit;
+				top: 1em;
+				margin: 0;
+				padding: 0em !important;
+			}
+			
+			#logo h1 span
+			{
+			}
+			
+		#logo .pennant
+		{
+			display: block;
+		}
+
+			#logo .pennant span
+			{
+			}
+
+			.homepage #logo .pennant span
+			{
+			}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding: 4em 0em 4em 0em;
+	}
+	
+		#banner header
+		{
+			margin-bottom: 2em;
+			padding: 0em 1em;
+		}
+
+	
+		#banner header h2
+		{
+			font-size: 2em;
+		}
+		
+		#banner header .byline
+		{
+			padding: 0em;
+			letter-spacing: 0.10em;
+			line-height: 1.4em;
+			font-size: 1em;
+		}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 4em 0em 1em 0em;
+	}
+
+		.homepage #main header p
+		{
+			padding: 0em 2em !important;
+		}
+		
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+	
+		#content section,
+		#content article
+		{
+			margin-bottom: 2em;
+		}
+
+		.contact #content
+		{
+			text-align: center;
+		}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar,
+	#sidebar2
+	{
+		text-align: center;
+	}
+
+		#sidebar section,
+		#sidebar section2
+		{
+			margin-bottom: 2em;
+		}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+		padding: 6em 0em;
+	}
+
+		#footer .actions
+		{
+			text-align: center;
+		}
+		
+			#footer .actions li
+			{
+				text-align: center;
+			}
+
+/*********************************************************************************/
+/* Featured                                                                     */
+/*********************************************************************************/
+
+	#featured
+	{
+		padding: 4em 0em 4em 0em;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-wrapper 
+	{
+		padding: 4em 0em 4em 0em;
+	}
+
+	#portfolio 
+	{
+	}
+
+		#portfolio .icon
+		{
+			font-size: 9em;
+		}
+
+		#portfolio .alignright
+		{
+			text-align: center;
+		}
+
+		#portfolio .alignleft
+		{
+			text-align: center;
+		}
+
+			#portfolio .button
+			{
+				text-align: center !important;
+			}
