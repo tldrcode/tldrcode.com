@@ -1491,7 +1491,11 @@ a {
 	background: #2a2a2a;
 	padding: 4em 0 6em 0;
 	text-align: center;
-}
+	}
+
+	#footer h1 span {
+		font-weight: 300;
+	}
 
 	#footer .icons a {
 		-moz-transition: opacity 0.2s ease-in-out;
