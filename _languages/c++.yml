@@ -74,6 +74,8 @@ Loops:
             default: code; }
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
+Functions: TODO
+
 User_Interface:
   -Type: cin>>
   Description: Retrieves from stdin.
@@ -87,9 +89,17 @@ User_Interface:
   Example: cout<< x;
   Example_Description: Displays the value of 'x.'
 
+Comments:
+  -Type: Single Line
+  Syntax: //comments
+
+  -Type: Block
+  Syntax: */many comments/*
+
+
 Hello_World:|
       \#include <iostream>
-      \#include <mainspacestd>
+      using namespace std;
       int main()
       {
         cout << "Hello World!";
