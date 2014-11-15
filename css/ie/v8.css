@@ -1,0 +1,30 @@
+/*
+	Polaris by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+ul.style1,
+ul.style1 .right,
+ul.icons,
+ul.icons li a,
+form input.text,
+form select,
+form textarea,
+.button,
+.button2,
+#logo .pennant span,
+.dropotron,
+#main .box,
+.homepage #main .image img,
+#main .image img
+{
+	position: relative;
+	-ms-behavior: url('css/ie/PIE.htc');
+}
+
+ul.style1 .fa:before
+{
+	font-size: 2.1em;
+	padding-top: 0.2em;
+}
