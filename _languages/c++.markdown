@@ -1,5 +1,5 @@
 ---
-template: language
+layout: language
 icon: icon-cplusplus
 
 Language: C++
@@ -109,3 +109,4 @@ Hello_World: |
         cout << "Hello World!";
       }
 ---
+test

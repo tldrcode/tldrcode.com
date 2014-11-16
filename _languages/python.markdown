@@ -1,5 +1,5 @@
 ---
-template: language
+layout: language
 icon: icon-python
 
 Language: Python
