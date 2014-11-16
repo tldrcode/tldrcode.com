@@ -5,7 +5,7 @@
     <ul>
       <li><a href="/index.html">Home</a></li>
       <li>
-        <a href="" class="icon fa-angle-down">Languages</a>
+        <a href="">Languages <i class="icon fa-angle-down"></i></a>
         <ul>
           {% for language in site.languages %}
           <li><a href="{{ language.url }}">{{ language.Language }}</a></li>
@@ -13,7 +13,7 @@
         </ul>
       </li>
       <li>
-        <a href="" class="icon fa-angle-down">Tools</a>
+        <a href="">Tools <i class="icon fa-angle-down"></i></a>
         <ul>
           {% for tool in site.data.coding_tools %}
             <li><a href="{{ tool.path }}">{{ tool.name }}</a></li>
