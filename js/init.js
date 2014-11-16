@@ -66,7 +66,8 @@
 			$('#nav > ul').dropotron({
 				offsetY: -20,
 				mode: 'fade',
-				noOpenerFade: true
+				noOpenerFade: true,
+				alignment: 'right'
 			});
 
 	});
