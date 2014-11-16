@@ -3,10 +3,10 @@ layout: default
 ---
 
 Base64:<br>
-<input type="text" id="base64">
+<textarea type="text" id="base64"></textarea>
 <br>
 ASCII:<br>
-<input type="text" id="ascii">
+<textarea type="text" id="ascii"></textarea>
 
 <br><button type="button" id="base64toascii" onclick="base64toascii()">Convert Base64 to ASCII</button>
 <br><button type="button" id="asciitobase64" onclick="asciitobase64()">Convert ASCII to Base64</button>
@@ -15,13 +15,11 @@ ASCII:<br>
   //btoa encodes
   function base64toascii() {
     var base64string = document.getElementById('base64').value;
-    console.log(base64string);
     document.getElementById('ascii').value = atob(base64string);
   }
 
   function asciitobase64() {
     var asciistring = document.getElementById('ascii').value;
-    console.log(asciistring);
     document.getElementById('base64').value = btoa(asciistring);
   }
 </script>
