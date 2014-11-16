@@ -35,7 +35,17 @@
 		letter-spacing: -0.015em;
 	}
 
-	h1,h2,h3,h4,h5,h6
+	h1
+	{
+		font-weight: 700;
+		font-size: 18pt;
+	}
+	h2
+	{
+		font-weight: 700;
+		font-size: 14pt;
+	}
+	h3,h4,h5,h6
 	{
 		font-weight: 700;
 	}
@@ -1255,139 +1265,6 @@ a {
 				width: 100%;
 				margin: 0 0 2em 0;
 			}
-
-/*********************************************************************************/
-/* Nav                                                                           */
-/*********************************************************************************/
-
-	/*#nav
-	{
-		position: absolute;
-		right: 0;
-		top: 1.5em;
-	}
-
-		#nav > ul > li
-		{
-			float: left;
-		}
-
-			#nav > ul > li:last-child
-			{
-				padding-right: 0;
-			}
-
-			#nav > ul > li > a,
-			#nav > ul > li > span
-			{
-				display: block;
-				margin-left: 0.7em;
-				padding: 0.30em 1em;
-				letter-spacing: 0.06em;
-				text-transform: uppercase;
-				text-decoration: none;
-				font-weight: 700;
-				font-size: 1em;
-				outline: 0;
-				color: #aaa;
-				color: rgba(255,255,255,.6);
-			}
-
-			#nav > ul > li > a.icon:before,
-			#nav > ul > li > span.icon:before
-			{
-				display: inline-block;
-				padding-right: 0.5em;
-				opacity: 0.3;
-				font-size: 1em;
-			}
-
-			#nav li.active a,
-			#nav li.active span
-			{
-				color: #fff;
-				color: rgba(255,255,255,1);
-			}
-
-			#nav > ul > li > ul
-			{
-				display: none;
-			}
-
-			#nav .arrow
-			{
-				position: absolute;
-				display: inline-block;
-				width: 100px;
-			}
-
-	.dropotron
-	{
-		top: 0;
-		text-align: left;
-		line-height: 2em;
-		min-width: 14em;
-		background: #2a2a2a;
-		line-height: 1em;
-		padding: 1.25em 0 1.25em 0;
-		border-radius: 8px;
-	}
-
-		.dropotron a,
-		.dropotron span
-		{
-			display: block;
-			padding: 0.75em 2em 0.75em 2em;
-			letter-spacing: 0.10em;
-			text-transform: uppercase;
-			font-size: 0.90em;
-			font-weight: 700;
-			text-decoration:  none;
-			color: #aaa;
-			color: rgba(255,255,255,.6);
-		}
-
-		.dropotron li:first-child > a,
-		.dropotron li:first-child > span
-		{
-			border-top: 0;
-		}
-
-		.dropotron li.active > a,
-		.dropotron li.active > span
-		{
-			color: #FFF;
-		}
-
-		.dropotron li:hover > a,
-		.dropotron li:hover > span
-		{
-			color: #FFF;
-		}
-
-	.dropotron.level-0
-	{
-		border-radius: 0px 0px 8px 8px;
-		font-size: 1em;
-		margin-top: 2.3em;
-		padding-top: 0;
-	}
-
-		.dropotron.level-0:before
-		{
-		}
-
-		.dropotron.level-0.center:before
-		{
-		}
-
-		.dropotron.level-0.left:before
-		{
-		}
-
-		.dropotron.level-0.right:before
-		{
-		}*/
 
 /*********************************************************************************/
 /* Banner                                                                        */
