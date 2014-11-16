@@ -629,7 +629,7 @@ a {
 
 			.button:hover
 			{
-				background: #000;
+				background: #2a2a2a;
 				border-color: #fff;
 				border-color: rgba(255,255,255,0.4);
 				color: #FFF !important;
@@ -1852,7 +1852,7 @@ a {
 
 		#about .button:hover
 		{
-			background: #000;
-			border-color: rgba(0,0,0,1) !important;
+			background: #2a2a2a;
+			border-color: #2a2a2a !important;
 			color: rgba(255,255,255,1) !important;
 		}
