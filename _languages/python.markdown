@@ -1,3 +1,6 @@
+---
+template: language
+
 Language: Python
 Language_Description: General purpose, high-level programming language.
 
@@ -15,21 +18,21 @@ Structures:
 
   -Type: if else
   Description: Has an if block followed by a code to be executed if the if block isn't.
-  Syntax:|
+  Syntax: |
           if statement: code
           else: code
-  Example:|
+  Example: |
           if x>5: code
           else: code
   Example_Description: If x is greater than 5 then the code on the first line will be executed.  If x isn't greater than 5 then the second line of code will be executed.
 
   -Type: if elseif
   Description: First evaluates the parameters attached to 'if.' If that returns false then the code moves on to evaluate the 'else if.' If the else if also returns false then the program will execute the last code (the part following 'else').  Only the first statement to return true will be executed!
-  Syntax:|
+  Syntax: |
           if statement: code
           else if statement: code
           else: code
-  Example:|
+  Example: |
           if x>5: code
           else if x<5: code
           else: code
@@ -72,3 +75,4 @@ Comments:
           '''
 
 Hello_World: print "Hello world!"
+---

@@ -1,3 +1,6 @@
+---
+template: language
+
 Language: C++
 Language_Description: Object orriented programming language based on 'C.'
 
@@ -97,10 +100,11 @@ Comments:
   Syntax: */many comments/*
 
 
-Hello_World:|
+Hello_World: |
       \#include <iostream>
       using namespace std;
       int main()
       {
         cout << "Hello World!";
       }
+---
