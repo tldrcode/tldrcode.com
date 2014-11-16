@@ -22,7 +22,7 @@ Data_Types:
   Description: An object that represents sequences of characters.
   Syntax: string variable_name;
 
-Loops:
+Structures:
   -Type: if
   Description: Executes code if the following statement is true.
   Syntax: if(statement) {code}
