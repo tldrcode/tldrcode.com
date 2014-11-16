@@ -16,23 +16,21 @@ layout: default
           </div>
         </div>
 
-        <h1>Data Types</h1>
         <div class="row">
+          <div class="4u">
+          <h1>Data Types</h1>
           {% for Data_Type in page.Data_Types %}
-          <div class="3u">
             <h2>{{ Data_Type.Type }}</h2>
             <p>{{ Data_Type.Description }}</p>
             {% highlight java %}
             {{ Data_Type.Syntax }}
             {% endhighlight %}
-          </div>
           {% endfor %}
-        </div>
+          </div>
 
-        <h1>Structures</h1>
-        <div class="row">
+          <div class="4u">
+          <h1>Structures</h1>
           {% for Structure in page.Structures %}
-          <div class="3u">
             <h2>{{ Structure.Type }}</h2>
             <p>{{ Structure.Description }}</p>
             {% highlight java %}
@@ -40,63 +38,37 @@ layout: default
             {{ Structure.Example }}
             {% endhighlight %}
             <p>{{ Structure.Example_Description }}</p>
-          </div>
           {% endfor %}
+          </div>
+
+          <div class="4u">
+          <h1>User Interface</h1>
+          {% for User_Interface in page.User_Interface %}
+            <h2>{{ User_Interface.Type }}</h2>
+            <p>{{ User_Interface.Description }}</p>
+            {% highlight java %}
+            {{ User_Interface.Syntax }}
+            {{ User_Interface.Example }}
+            {% endhighlight %}
+            <p>{{ User_Interface.Example_Description }}</p>
+          {% endfor %}
+          </div>
+
+          <div class="4u">
+          <h1>Commenting</h1>
+            {% for Comment in page.Comments %}
+            <h2>{{ Comment.Type }}</h2>
+            <p>{{ Comment.Syntax }}</p>
+            {% endfor %}
+          </div>
+
+          <div class="4u">
+            <h1>Hello World</h1>
+            <p>{{ page.Hello_World | escape }}</p>
+          </div>
         </div>
-
-
-
-<h1>Structures</h1>
-<div class="row">
-  <div class="3u">
-    <h2></h2>
-    <p></p>
+      </article>
+      <!-- /Content -->
+    </div>
   </div>
-</div>
-
-
-
-
-
-
-<h1>User Interface</h1>
-<ul>
-  {% for User_Interface in page.User_Interface %}
-    <li>{{ User_Interface.Type }}</li>
-    <li>
-      <ul>
-        <li>{{ User_Interface.Description }}</li>
-        <li>{{ User_Interface.Syntax }}</li>
-        <li>{{ User_Interface.Example }}</li>
-        <li>{{ User_Interface.Example_Description }}</li>
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
-<br>
-
-<h1>Commenting</h1>
-<ul>
-  {% for Comment in page.Comments %}
-    <li>{{ Comment.Type }}</li>
-    <li>
-      <ul>
-        <li>{{ Comment.Syntax }}</li>
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
-<br>
-
-<h1>Hello World</h1>
-{{ page.Hello_World | escape }}
-
-</article>
-</div>
-</div>
-<!-- /Content -->
-
-
 <!-- /Main -->
-
-<!--TODO:Functions-->
