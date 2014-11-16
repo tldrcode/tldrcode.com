@@ -1,5 +1,6 @@
 ---
-template: language
+layout: language
+icon: icon-java
 
 Language: Java
 Language_Description: Class based, object oriented programming with few implementation dependencies.
