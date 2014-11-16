@@ -84,7 +84,7 @@ layout: default
           <div class="4u">
             <h1><a onclick="toggle_visibility('HelloWorld');">Hello World</a></h1>
             <div style="display: none;" id='HelloWorld'>
-              <p>{{ page.Hello_World | escape }}</p>
+              <p>{{ page.Hello_World | escape | textilize }}</p>
             </div>
           </div>
         </div>
