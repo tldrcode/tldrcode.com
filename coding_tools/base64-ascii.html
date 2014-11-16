@@ -1,25 +1,41 @@
 ---
 layout: default
 ---
+<div id="main">
+  <div class="container">
+    <div class="row">
+      <div id="content" class="12u">
+        <article>
+          <header>
+            <h2>Base64 &lt;-&gt; ASCII </h2>
+          </header>
+      </div>
+    </div>
 
-Base64:<br>
-<textarea type="text" id="base64"></textarea>
-<br>
-ASCII:<br>
-<textarea type="text" id="ascii"></textarea>
+    <div class="row">
+      <div class="6u">
+        <h1>Base64</h1>
+        <textarea type="text" id="base64"></textarea>
+        <br><button type="button" class="button" id="base64toascii" onclick="base64toascii()">Convert Base64 to ASCII</button>
+      </div>
+      <div class="6u">
+        <h1>ASCII</h1>
+        <textarea type="text" id="ascii"></textarea>
+        <br><button type="button" class="button" id="asciitobase64" onclick="asciitobase64()">Convert ASCII to Base64</button>
+      </div>
+    </div>
 
-<br><button type="button" id="base64toascii" onclick="base64toascii()">Convert Base64 to ASCII</button>
-<br><button type="button" id="asciitobase64" onclick="asciitobase64()">Convert ASCII to Base64</button>
+    <script language="JavaScript">
+      //btoa encodes
+      function base64toascii() {
+        var base64string = document.getElementById('base64').value;
+        document.getElementById('ascii').value = atob(base64string);
+      }
 
-<script language="JavaScript">
-  //btoa encodes
-  function base64toascii() {
-    var base64string = document.getElementById('base64').value;
-    document.getElementById('ascii').value = atob(base64string);
-  }
-
-  function asciitobase64() {
-    var asciistring = document.getElementById('ascii').value;
-    document.getElementById('base64').value = btoa(asciistring);
-  }
-</script>
+      function asciitobase64() {
+        var asciistring = document.getElementById('ascii').value;
+        document.getElementById('base64').value = btoa(asciistring);
+      }
+    </script>
+  </div>
+</div>
