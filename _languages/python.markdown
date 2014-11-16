@@ -8,7 +8,7 @@ Language_Description: General purpose, high-level programming language.
 Data_Types:
 - Type: All
   Description: Python variable types don't have to be declared.  Simply creating a variable and setting it equal (with '=') to a value works.
-  Syntax: x = 5
+  Syntax: variable_name = value
 
 Structures:
 - Type: if
