@@ -3,7 +3,7 @@ Language_Description: Object orriented programming language based on 'C.'
 
 Data_Types:
   -Type: int
-  Description: Declares an integer
+  Description: Declares an integer.
   Syntax: int variable_name;
 
   -Type: float
@@ -24,10 +24,10 @@ Data_Types:
 
 Loops:
   -Type: if
-  Description: Executes code if the following statement is true
+  Description: Executes code if the following statement is true.
   Syntax: if(statement) {code}
   Example: if(x>5) {code}
-  Example_Description: Code will only be executed if the variable x is greater than 5
+  Example_Description: Code will only be executed if the variable x is greater than 5.
 
   -Type: else
   Description: Follows an if block and will be executed if the if block isn't.
@@ -37,7 +37,7 @@ Loops:
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
   Syntax: else if (statement) {code}
   Example: else if (x==5) {code}
-  Example_Description: Executes when previous if block doesn't and only if x equals 5
+  Example_Description: Executes when previous if block doesn't and only if x equals 5.
 
   -Type: while
   Description: Repeats code as long as statement remains true.
