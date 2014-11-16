@@ -98,7 +98,7 @@ Comments:
   Syntax: //comments
 
 - Type: Block
-  Syntax: "*/many comments\*"
+  Syntax: "*/many comments/*"
 
 
 Hello_World: |
