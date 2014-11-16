@@ -2,9 +2,18 @@
 layout: default
 ---
 
-<h1>{{ page.Language }}</h1>
+<!-- Main -->
+  <div id="main">
+    <div class="container">
+      <!-- Content -->
+        <div class="row">
+          <div id="content" class="12u">
+            <article>
+              <header>
+                <h2>{{ page.Language }}</h2>
+                <span class="byline">{{ page.Language_Description }}</span>
+              </header>
 
-<h2>{{ page.Language_Description }}</h2>
 
 <h1>Data Types</h1>
 <ul>
@@ -68,6 +77,15 @@ layout: default
 <br>
 
 <h1>Hello World</h1>
-{{ page.Hello_World }}
+{{ page.Hello_World | escape }}
+
+</article>
+</div>
+</div>
+<!-- /Content -->
+
+</div>
+</div>
+<!-- /Main -->
 
 <!--TODO:Functions-->
