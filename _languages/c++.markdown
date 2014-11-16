@@ -67,7 +67,7 @@ Structures:
           {case var1: code;
           case var2: code;
           default: code; }
-  Example:|
+  Example: |
           int x = 5
           var1 = 4
           var2 = 5
@@ -97,7 +97,7 @@ Comments:
   Syntax: //comments
 
   -Type: Block
-  Syntax: */many comments/*
+  Syntax: \*/many comments/\*
 
 
 Hello_World: |

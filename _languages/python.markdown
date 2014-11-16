@@ -12,8 +12,8 @@ Data_Types:
 Structures:
   -Type: if
   Description: Executes code if the following statement is true.
-  Syntax: if statement: code
-  Example: if x>5: code
+  Syntax: "if statement: code"
+  Example: "if x>5: code"
   Example_Description: The code will only execute if x is greater than 5.
 
   -Type: if else
@@ -22,8 +22,8 @@ Structures:
           if statement: code
           else: code
   Example: |
-          if x>5: code
-          else: code
+          "if x>5: code
+          else: code"
   Example_Description: If x is greater than 5 then the code on the first line will be executed.  If x isn't greater than 5 then the second line of code will be executed.
 
   -Type: if elseif
@@ -40,14 +40,14 @@ Structures:
 
   -Type: for
   Description: Loops as long as the stated conditions are met.
-  Syntax: for variable in range (start [,stop [,increment]]): code
-  Example: for x in range (10, 0, -2): code
+  Syntax: "for variable in range (start [,stop [,increment]]): code"
+  Example: "for x in range (10, 0, -2): code"
   Example_Description: Variable 'x' is assigned a value of 10 and after each execution of the code x's value is decreased by 2.  The code will execute until x equals 0.
 
   -Type: while
   Description: Executes the code repeatedly as long as the statement remains true.
-  Syntax: while statement: code
-  Example: while x>5: code
+  Syntax: "while statement: code"
+  Example: "while x>5: code"
   Example_Description: This code would be executed as long as x is greater than 5 and would repeatedly execute until x wasn't greater than 5.
 
 Functions: TODO

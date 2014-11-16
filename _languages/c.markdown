@@ -22,34 +22,34 @@ Data_Types:
   Syntax: char variable_name;
 
 Conversion Characters:
-  Character: %c
+  Character: "%c"
   Description: Single character.
 
-  Character: %d or %i
+  Character: "%d or %i"
   Description: Signed decimal integer (int).
 
-  Character: %e
+  Character: "%e"
   Description: Signed floating-point value in E notation.
 
-  Character: %f
+  Character: "%f"
   Description: Signed floating-point value (float).
 
-  Character: %g
+  Character: "%g"
   Description: Signed value in
 
-  Character: %o
+  Character: "%o"
   Description: Unsigned octal (base 8) integer (int).
 
-  Character: %s
+  Character: "%s"
   Description: String of text.
 
-  Character: %u
+  Character: "%u"
   Description: Unsigned decimal integer (int).
 
-  Character: %x
+  Character: "%x"
   Description: Unsigned hexadecimal (base 16) integer (int).
 
-  Character: %%
+  Character: "%%"
   Description: Percent sign.
 
 Structures:
@@ -124,7 +124,7 @@ Comments:
   Syntax: //comments
 
   -Type: Block
-  Syntax: */many comments/*
+  Syntax: \*/many comments/\*
 
 
 Hello_World: |
