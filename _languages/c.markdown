@@ -11,7 +11,7 @@ Data_Types:
   Syntax: int variable_name;
 
   -Type: float
-  Description:  Declares a variable that's able to harness the power of deciamls (accurate up to 7 digits).
+  Description:  Declares a variable that's able to harness the power of decimals (accurate up to 7 digits).
   Syntax: float variable_name;
 
   -Type: double
