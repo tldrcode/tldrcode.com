@@ -8,6 +8,16 @@
         </header>
       </section>
       <input name="search" id="banner-search" autocomplete="no" placeholder="Search for code. Examples: python, ruby, c++" type="text" class="text" />
+      <ul id="banner-search-results"></ul>
+      <script language="JavaScript">
+        SimpleJekyllSearch.init({
+          searchInput: document.getElementById('banner-search'),
+          resultsContainer: document.getElementById('banner-search-results'),
+          dataSource: '/search.json',
+          searchResultTemplate: '<li><a href="{url}">{language}</a></li>',
+          noResultsText: 'We don\'t seem to have that one. Maybe you can help by adding it?'
+        })
+      </script>
     </div>
   </div>
 <!-- /Banner -->
