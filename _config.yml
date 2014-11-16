@@ -11,6 +11,6 @@ github_username:  tldrcode
 # Build settings
 markdown: kramdown
 
-
 collections:
-- languages
+  languages:
+    output: true

@@ -1,3 +1,6 @@
+---
+template: language
+
 Language: C
 Language_Description: General purpose, low-level programming language.
 
@@ -91,7 +94,7 @@ Structures:
           {case var1: code;
           case var2: code;
           default: code; }
-  Example:|
+  Example: |
           int x = 5
           var1 = 4
           var2 = 5
@@ -124,9 +127,10 @@ Comments:
   Syntax: */many comments/*
 
 
-Hello_World:|
+Hello_World: |
       \#include<stdio.h>
       main()
       {
         printf("Hello World");
         }
+---

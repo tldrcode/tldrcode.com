@@ -1,0 +1,9 @@
+[
+  {% for language in site.languages %}
+    {
+      "language"    : "{{ language.Language | escape }}",
+      "language_description" : "{{ language.Language_Description | escape }}",
+      "url"   : "{{ language.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
