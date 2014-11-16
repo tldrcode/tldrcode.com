@@ -31,7 +31,7 @@ layout: default
           <div class="4u">
           <h1>Data Types</h1>
           {% for Data_Type in page.Data_Types %}
-            <h2><a onclick="toggle_visibility('{{ Data_Type.Type }}');">{{ Data_Type.Type }}</a></h2>
+            <h2><a onclick="toggle_visibility('{{ Data_Type.Type }}');">{{ Data_Type.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ Data_Type.Type }}'>
               <p>{{ Data_Type.Description }}</p>
               {% highlight java %}
@@ -44,7 +44,7 @@ layout: default
           <div class="4u">
           <h1>Structures</h1>
           {% for Structure in page.Structures %}
-            <h2><a onclick="toggle_visibility('{{ Structure.Type }}');">{{ Structure.Type }}</a></h2>
+            <h2><a onclick="toggle_visibility('{{ Structure.Type }}');">{{ Structure.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ Structure.Type }}'>
               <p>{{ Structure.Description }}</p>
               {% highlight java %}
@@ -59,7 +59,7 @@ layout: default
           <div class="4u">
           <h1>User Interface</h1>
           {% for User_Interface in page.User_Interface %}
-            <h2><a onclick="toggle_visibility('{{ User_Interface.Type }}');">{{ User_Interface.Type }}</a></h2>
+            <h2><a onclick="toggle_visibility('{{ User_Interface.Type }}');">{{ User_Interface.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ User_Interface.Type }}'>
               <p>{{ User_Interface.Description }}</p>
               {% highlight java %}
@@ -70,11 +70,13 @@ layout: default
             </div>
           {% endfor %}
           </div>
+        </div>
 
+        <div class="row">
           <div class="4u">
           <h1>Commenting</h1>
             {% for Comment in page.Comments %}
-            <h2><a onclick="toggle_visibility('{{ Comment.Type }}');">{{ Comment.Type }}</a></h2>
+            <h2><a onclick="toggle_visibility('{{ Comment.Type }}');">{{ Comment.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ Comment.Type }}'>
               <p>{{ Comment.Syntax }}</p>
             </div>
@@ -82,7 +84,8 @@ layout: default
           </div>
 
           <div class="4u">
-            <h1><a onclick="toggle_visibility('HelloWorld');">Hello World</a></h1>
+            <h1>Hello World</h1>
+            <h2><a onclick="toggle_visibility('HelloWorld');">Example <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='HelloWorld'>
               <p>{{ page.Hello_World | escape | textilize }}</p>
             </div>
