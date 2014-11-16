@@ -13,79 +13,62 @@ layout: default
                 <h2>{{ page.Language }}</h2>
                 <span class="byline">{{ page.Language_Description }}</span>
               </header>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="4u">
+          <h1>Data Types</h1>
+          {% for Data_Type in page.Data_Types %}
+            <h2>{{ Data_Type.Type }}</h2>
+            <p>{{ Data_Type.Description }}</p>
+            {% highlight java %}
+            {{ Data_Type.Syntax }}
+            {% endhighlight %}
+          {% endfor %}
+          </div>
 
-<h1>Data Types</h1>
-<ul>
-  {% for Data_Type in page.Data_Types %}
-    <li>{{ Data_Type.Type }}</li>
-    <li>
-      <ul>
-        <li>{{ Data_Type.Description }}</li>
-        <li>{{ Data_Type.Syntax }}</li>
-      </ul>
-    <li>
-  {% endfor %}
-</ul>
-<br>
+          <div class="4u">
+          <h1>Structures</h1>
+          {% for Structure in page.Structures %}
+            <h2>{{ Structure.Type }}</h2>
+            <p>{{ Structure.Description }}</p>
+            {% highlight java %}
+            {{ Structure.Syntax }}
+            {{ Structure.Example }}
+            {% endhighlight %}
+            <p>{{ Structure.Example_Description }}</p>
+          {% endfor %}
+          </div>
 
+          <div class="4u">
+          <h1>User Interface</h1>
+          {% for User_Interface in page.User_Interface %}
+            <h2>{{ User_Interface.Type }}</h2>
+            <p>{{ User_Interface.Description }}</p>
+            {% highlight java %}
+            {{ User_Interface.Syntax }}
+            {{ User_Interface.Example }}
+            {% endhighlight %}
+            <p>{{ User_Interface.Example_Description }}</p>
+          {% endfor %}
+          </div>
 
-<h1>Structures</h1>
-<ul>
-  {% for Structure in page.Structures %}
-    <li>{{ Structure.Type }}</li>
-      <li>
-        <ul>
-          <li>{{ Structure.Description }}</li>
-          <li>{{ Structure.Syntax }}</li>
-          <li>{{ Structure.Example }}</li>
-          <li>{{ Structure.Example_Description }}</li>
-        </ul>
-      </li>
-  {% endfor %}
-</ul>
-<br>
+          <div class="4u">
+          <h1>Commenting</h1>
+            {% for Comment in page.Comments %}
+            <h2>{{ Comment.Type }}</h2>
+            <p>{{ Comment.Syntax }}</p>
+            {% endfor %}
+          </div>
 
-
-<h1>User Interface</h1>
-<ul>
-  {% for User_Interface in page.User_Interface %}
-    <li>{{ User_Interface.Type }}</li>
-    <li>
-      <ul>
-        <li>{{ User_Interface.Description }}</li>
-        <li>{{ User_Interface.Syntax }}</li>
-        <li>{{ User_Interface.Example }}</li>
-        <li>{{ User_Interface.Example_Description }}</li>
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
-<br>
-
-<h1>Commenting</h1>
-<ul>
-  {% for Comment in page.Comments %}
-    <li>{{ Comment.Type }}</li>
-    <li>
-      <ul>
-        <li>{{ Comment.Syntax }}</li>
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
-<br>
-
-<h1>Hello World</h1>
-{{ page.Hello_World | escape }}
-
-</article>
-</div>
-</div>
-<!-- /Content -->
-
-</div>
-</div>
+          <div class="4u">
+            <h1>Hello World</h1>
+            <p>{{ page.Hello_World | escape }}</p>
+          </div>
+        </div>
+      </article>
+      <!-- /Content -->
+    </div>
+  </div>
 <!-- /Main -->
-
-<!--TODO:Functions-->

@@ -11,6 +11,8 @@ github_username:  https://github.com/tldrcode
 # Build settings
 markdown: kramdown
 
+highlighter: pygments
+
 collections:
   languages:
     output: true
