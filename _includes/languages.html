@@ -2,18 +2,23 @@
 <div id="languages">
   <div class="container">
     <ul class="featured">
-
       {% for language in site.languages limit:8 %}
-        <li>
+      {% capture var %}{{ forloop.index0 }}{% endcapture %}
+      {% if var == '0' or var == '4' %}
+      <div class="row">
+        {% endif %}
+        <div class="3u">
           <a href="{{ language.url }}">
             <span class="pennant"><span class="icon {{ language.icon }}"></span></span>
             <h3>{{ language.Language }}</h3>
           </a>
-            <p>{{ language.Language_Description }}</p>
-        </li>
+          <p>{{ language.Language_Description }}</p>
+        </div>
+      {% if var == '3' or var == '7' %}
+      </div>
+      {% endif %}
       {% endfor %}
-    </ul>
-
+    </div>
   </div>
 </div>
 <!-- /Languages -->
