@@ -972,7 +972,7 @@ a {
 			}
 
 			.dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
-				background: #e89980;
+				background: #2a2a2a;
 				color: #ffffff;
 			}
 
@@ -996,7 +996,7 @@ a {
 				display: block;
 				height: 0.75em;
 				position: absolute;
-				right: 1.25em;
+				left: 1em;
 				top: -0.375em;
 				width: 0.75em;
 				z-index: 0;
