@@ -7,8 +7,9 @@
       <li>
         <a href="" class="icon fa-angle-down">Languages</a>
         <ul>
-          <li><a href="/languages/python.html">Python</a></li>
-          <li><a href="/languages/c++.html">C++</a></li>
+          {% for language in site.languages %}
+          <li><a href="/languages/{{ post.title }}.html">{{ language.title }}</a></li>
+          {% endfor %}
         </ul>
       </li>
       <li>
