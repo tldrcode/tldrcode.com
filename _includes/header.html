@@ -8,7 +8,7 @@
         <a href="" class="icon fa-angle-down">Languages</a>
         <ul>
           {% for language in site.languages %}
-          <li><a href="/languages/{{ post.title }}.html">{{ language.title }}</a></li>
+          <li><a href="/languages/{{ language.Language }}.html">{{ language.Language }}</a></li>
           {% endfor %}
         </ul>
       </li>
@@ -21,7 +21,7 @@
         </ul>
       </li>
       <li>
-        <input id="navbar-search" name="search" placeholder="Search" type="text" class="text icon fa-angle-down"/>
+        <input id="navbar-search" name="search" autocomplete="no" placeholder="Search" type="text" class="text icon fa-angle-down"/>
         <ul id="navbar-search-results">
         </ul>
       </li>

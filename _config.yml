@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Don't waste time with syntax; unleash the code!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tldrcode.com" # the base hostname & protocol for your site
-twitter_username: tldrcode
-github_username:  tldrcode
+twitter_username: https://twitter.com/tldrcode
+github_username:  https://github.com/tldrcode
 
 # Build settings
 markdown: kramdown
