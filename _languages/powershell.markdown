@@ -6,16 +6,16 @@ Language_Description: A task automation and configuration management framework f
 
 Data_Types:
   -Type: Variable
-  Description:
-  Syntax: $x
+  Description: PowerShell variable types don't have to be declared.
+  Syntax: $variable_name = value
 
   -Type: Array
-  Description:
-  Syntax:
+  Description: A series of objects all of which are the same size and type.
+  Syntax: $variable_name = value, value2, value3
 
   -Type: Constant
   Description: Constants are created without a '$,' but are referenced with a '$.'
-  Syntax: Set-Variable –name x –value  –option constant
+  Syntax: Set-Variable –name variable_name –value variable_value –option constant
 
 Structures:
   -Type: if
@@ -73,8 +73,24 @@ Structures:
 Functions: TODO
 
 User_Interface:
+  -Type: Read-Host
+  Description: Displays to stdout and retrieves from stdin.
+  Syntax: $variable = Read-Host "prompt"
+  Example: $x = Read-Host "What your name is?"
+  Example_Description: This would output "What your name is?" and store the reply as 'x.'
+
+  -Type: Write-Host
+  Description: Displays to stdout.
+  Syntax: Write-Host output
+  Example: Write-Host "Hola!"
+  Example_Description: This would output "Hola!"
 
 Comments:
+  -Type: Single line
+  Syntax: #comment
+
+  -Type: Block
+  Syntax: <# much comment #>
 
 Hello_World: |
             $strString = "Hello World"
