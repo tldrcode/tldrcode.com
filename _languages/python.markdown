@@ -1,5 +1,6 @@
 ---
 template: language
+icon: icon-python
 
 Language: Python
 Language_Description: General purpose, high-level programming language.

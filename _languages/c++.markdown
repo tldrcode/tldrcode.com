@@ -1,5 +1,6 @@
 ---
 template: language
+icon: icon-cplusplus
 
 Language: C++
 Language_Description: Object orriented programming language based on 'C.'
