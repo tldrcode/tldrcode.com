@@ -50,7 +50,7 @@
 	{
 		margin-top: 0 !important;
 	}
-	
+
 	form
 	{
 		width: 100%;
@@ -60,16 +60,16 @@
 	{
 		text-align: center;
 	}
-		
+
 		.homepage header
 		{
 		}
-	
+
 		header h2
 		{
 			font-size: 1.6em;
 		}
-		
+
 		header .byline
 		{
 			font-size: 1.1em;
@@ -77,13 +77,13 @@
 
 		ul.style1
 		{
-		}	
-		
+		}
+
 			ul.style1 .left
 			{
 				padding: 0.35em 0em;
 			}
-		
+
 			ul.style1 .right
 			{
 				padding: 1.5em 1.5em 1.5em 1.5em;
@@ -106,21 +106,21 @@
 		{
 			text-align: center !important;
 		}
-		
+
 		.button
 		{
 			width: 100%;
 			max-width: 320px;
-		}	
+		}
 
 		.button-alt
 		{
-		}	
+		}
 
 		form
 		{
 		}
-			
+
 			form .button
 			{
 				width: 100% !important;
@@ -200,12 +200,12 @@
 			font-weight: 700;
 			font-size: 0.95em;
 		}
-		
+
 			#navPanel .link:first-child
 			{
 				border-top: 0;
 			}
-			
+
 			#navPanel .link.depth-0
 			{
 				color: #fff;
@@ -217,7 +217,7 @@
 			#navPanel .indent-4 { display: inline-block; width: 4em; }
 			#navPanel .indent-5 { display: inline-block; width: 5em; }
 			#navPanel .depth-0 { color: #fff; }
-			
+
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -242,7 +242,7 @@
 				display: block;
 				text-align: center;
 		}
-		
+
 			#logo h1 a
 			{
 				position: inherit;
@@ -250,11 +250,11 @@
 				margin: 0;
 				padding: 0em !important;
 			}
-			
+
 			#logo h1 span
 			{
 			}
-			
+
 		#logo .pennant
 		{
 			display: block;
@@ -285,19 +285,19 @@
 	{
 		padding: 4em 0em 4em 0em;
 	}
-	
+
 		#banner header
 		{
 			margin-bottom: 2em;
 			padding: 0em 1em;
 		}
 
-	
+
 		#banner header h2
 		{
 			font-size: 2em;
 		}
-		
+
 		#banner header .byline
 		{
 			padding: 0em;
@@ -319,7 +319,7 @@
 		{
 			padding: 0em 2em !important;
 		}
-		
+
 /*********************************************************************************/
 /* Content                                                                       */
 /*********************************************************************************/
@@ -327,7 +327,7 @@
 	#content
 	{
 	}
-	
+
 		#content section,
 		#content article
 		{
@@ -358,7 +358,7 @@
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
-	
+
 	#footer
 	{
 		padding: 6em 0em;
@@ -368,7 +368,7 @@
 		{
 			text-align: center;
 		}
-		
+
 			#footer .actions li
 			{
 				text-align: center;
@@ -387,12 +387,12 @@
 /* Portfolio                                                                     */
 /*********************************************************************************/
 
-	#portfolio-wrapper 
+	#portfolio-wrapper
 	{
 		padding: 4em 0em 4em 0em;
 	}
 
-	#portfolio 
+	#portfolio
 	{
 	}
 
