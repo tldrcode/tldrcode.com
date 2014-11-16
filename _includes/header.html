@@ -15,9 +15,9 @@
       <li>
         <a href="" class="icon fa-angle-down">Tools</a>
         <ul>
-          <li><a href="left-sidebar.html">Left Sidebar</a></li>
-          <li><a href="right-sidebar.html">Right Sidebar</a></li>
-          <li><a href="no-sidebar.html">No Sidebar</a></li>
+          {% for tool in site.data.coding_tools %}
+            <li><a href="{{ tool.path }}">{{ tool.name }}</a></li>
+          {% endfor %}
         </ul>
       </li>
       <li>
