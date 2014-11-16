@@ -1,5 +1,6 @@
 ---
 layout: language
+icon: icon-csharp
 
 Language: C#
 Language_Description: An object oriented hybrid of C and C++ designed for web developement.
