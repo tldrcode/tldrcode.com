@@ -8,10 +8,8 @@
       <div class="row">
         {% endif %}
         <div class="3u">
-          <a href="{{ language.url }}">
-            <span class="pennant"><span class="icon {{ language.icon }}"></span></span>
-            <h3>{{ language.Language }}</h3>
-          </a>
+            <a href="{{ language.url }}"><span class="pennant"><span class="icon {{ language.icon }}"></span></span></a>
+            <h3><a href="{{ language.url }}">{{ language.Language }}</a></h3>
           <p>{{ language.Language_Description }}</p>
         </div>
       {% if var == '3' or var == '7' %}
