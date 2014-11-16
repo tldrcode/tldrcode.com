@@ -44,6 +44,19 @@ Structures:
 Functions: TODO
 
 User_Interface:
+- Type: print
+  Description: Displays to stdout.
+  Syntax: print "output"
+  Example: print "yolo."
+  Example_Description: Displays the message 'yolo.'
+
+- Type: gets
+  Description: Retrieves from stdin.
+  Syntax: variable_to_be_assigned = gets
+  Example: |
+          print "What your name is?"
+          name = gets
+  Example_Description: Displays asks for the users name and stores the answer as 'name.'
 
 Comments:
 - Type: Single line
