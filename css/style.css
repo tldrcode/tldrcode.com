@@ -1808,49 +1808,49 @@ a {
 		}
 
 /*********************************************************************************/
-/* Portfolio                                                                     */
+/* about                                                                     */
 /*********************************************************************************/
 
-	#portfolio-wrapper
+	#about-wrapper
 	{
 		position: relative;
 		padding: 5em 0em 6em 0em;
 		background: #edeff0;
 	}
 
-		#portfolio header h2
+		#about header h2
 		{
 			margin-top: 0.50em;
 		}
 
-		#portfolio .icon
+		#about .icon
 		{
 			font-size: 9em;
 		}
 
-		#portfolio .alignright
+		#about .alignright
 		{
 			text-align: right;
 		}
 
-		#portfolio .alignleft
+		#about .alignleft
 		{
 			text-align: left;
 		}
 
-		#portfolio .actions
+		#about .actions
 		{
 			margin-top: 2em;
 			text-align: center;
 		}
 
-		#portfolio .button
+		#about .button
 		{
 			border-color: rgba(0,0,0,0.6) !important;
 			color: rgba(0,0,0,0.8) !important;
 		}
 
-		#portfolio .button:hover
+		#about .button:hover
 		{
 			background: #000;
 			border-color: rgba(0,0,0,1) !important;
