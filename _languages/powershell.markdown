@@ -91,7 +91,7 @@ Comments:
   Syntax: "#comment"
 
 - Type: Block
-  Syntax: <# much comment #>
+  Syntax: '<# much comment #>'
 
 Hello_World: |
             $strString = "Hello World"

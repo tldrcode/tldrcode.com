@@ -2,8 +2,8 @@
 layout: language
 icon: icon-csharp
 
-Language: C#
-Language_Description: An object oriented hybrid of C and C++ designed for web developement.
+Language: 'C#'
+Language_Description: An object oriented hybrid of C and C++ designed for Windows development.
 
 Data_Types:
 - Type: int
@@ -105,9 +105,9 @@ Comments:
   Syntax: "*/many comments/*"
 
 
-Hello_World: |
+Hello_World: |-
       public static void Main()
       {
         System.Console.WriteLine("Hello, World!");
-        }
+      }
 ---

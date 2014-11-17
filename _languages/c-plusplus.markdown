@@ -101,8 +101,8 @@ Comments:
   Syntax: "*/many comments/*"
 
 
-Hello_World: |
-      "#"include <iostream>
+Hello_World: |-
+      #include <iostream>
       using namespace std;
       int main()
       {

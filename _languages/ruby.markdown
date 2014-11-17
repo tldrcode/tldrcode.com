@@ -60,7 +60,7 @@ User_Interface:
 
 Comments:
 - Type: Single line
-  Syntax: "#comment"
+  Syntax: '#comment'
 
 - Type: Block
   Syntax: |

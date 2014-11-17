@@ -128,8 +128,8 @@ Comments:
   Syntax: "*/many comments/*"
 
 
-Hello_World: |
-      \#include<stdio.h>
+Hello_World: |-
+      #include<stdio.h>
       main()
       {
         printf("Hello World");
