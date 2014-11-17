@@ -33,7 +33,7 @@ layout: default
           {% for Data_Type in page.Data_Types %}
             <h2><a onclick="toggle_visibility('{{ Data_Type.Type }}');">{{ Data_Type.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ Data_Type.Type }}'>
-              <p>{{ Data_Type.Description }}</p>
+              {{ Data_Type.Description }}
               <pre><code class="language-{{ page.Language }}">{{ Data_Type.Syntax }}</code></pre>
             </div>
           {% endfor %}
@@ -44,10 +44,12 @@ layout: default
           {% for Structure in page.Structures %}
             <h2><a onclick="toggle_visibility('{{ Structure.Type }}');">{{ Structure.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ Structure.Type }}'>
-              <p>{{ Structure.Description }}</p>
+              {{ Structure.Description }}</p>
+              Syntax
               <pre><code class="language-{{ page.Language }}">{{ Structure.Syntax }}</code></pre>
+              Example
               <pre><code class="language-{{ page.Language }}">{{ Structure.Example }}</code></pre>
-              <p>{{ Structure.Example_Description }}</p>
+              {{ Structure.Example_Description }}
             </div>
           {% endfor %}
           </div>
@@ -57,10 +59,10 @@ layout: default
           {% for User_Interface in page.User_Interface %}
             <h2><a onclick="toggle_visibility('{{ User_Interface.Type }}');">{{ User_Interface.Type }} <i class="icon fa-angle-down"></i></a></h2>
             <div style="display: none;" id='{{ User_Interface.Type }}'>
-              <p>{{ User_Interface.Description }}</p>
+              {{ User_Interface.Description }}
               <pre><code class="language-{{ page.Language }}">{{ User_Interface.Syntax }}</code></pre>
               <pre><code class="language-{{ page.Language }}">{{ User_Interface.Example }}</code></pre>
-              <p>{{ User_Interface.Example_Description }}</p>
+              {{ User_Interface.Example_Description }}
             </div>
           {% endfor %}
           </div>
