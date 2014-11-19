@@ -4,6 +4,8 @@ icon: icon-csharp
 
 Language: 'C#'
 Language_Description: An object oriented hybrid of C and C++ designed for Windows development.
+prism_name: csharp
+
 
 Data_Types:
 - Type: int
