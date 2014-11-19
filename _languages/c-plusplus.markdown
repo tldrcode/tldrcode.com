@@ -4,6 +4,7 @@ icon: icon-cplusplus
 
 Language: C++
 Language_Description: Object oriented programming language based on 'C.'
+prism_name: cpp
 
 Data_Types:
 - Type: int
@@ -35,12 +36,31 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: else {code}
+  Syntax: if(false){...} else {code}
+  Example: |
+    int i = 0;
+    if(i == 1){
+      ...
+    }
+    else{
+      //code
+    }
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
-  Syntax: else if (statement) {code}
-  Example: else if (x==5) {code}
+  Syntax: |
+    if(boolean_logic){
+      ...
+    }else if (boolean_logic) {
+      //code
+    }
+  Example: |
+    int i = 5;
+    if(i < 0){
+      ...
+    }else if (i > 0) {
+      //code
+    }
   Example_Description: Executes when previous if block doesn't and only if x equals 5.
 
 - Type: while
