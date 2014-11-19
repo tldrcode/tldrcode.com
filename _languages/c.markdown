@@ -22,37 +22,6 @@ Data_Types:
   Description: 8 bit data type that usually contains characters.
   Syntax: char variable_name;
 
-Conversion Characters:
-  Character: "%c"
-  Description: Single character.
-
-  Character: "%d or %i"
-  Description: Signed decimal integer (int).
-
-  Character: "%e"
-  Description: Signed floating-point value in E notation.
-
-  Character: "%f"
-  Description: Signed floating-point value (float).
-
-  Character: "%g"
-  Description: Signed value in
-
-  Character: "%o"
-  Description: Unsigned octal (base 8) integer (int).
-
-  Character: "%s"
-  Description: String of text.
-
-  Character: "%u"
-  Description: Unsigned decimal integer (int).
-
-  Character: "%x"
-  Description: Unsigned hexadecimal (base 16) integer (int).
-
-  Character: "%%"
-  Description: Percent sign.
-
 Structures:
 - Type: if
   Description: Executes code if the following statement is true.
