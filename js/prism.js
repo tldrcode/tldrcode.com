@@ -23,6 +23,29 @@ Prism.languages.rip={comment:/#[^\r\n]*(\r?\n|$)/g,keyword:/(?:=>|->)|\b(?:class
 Prism.languages.gherkin={comment:{pattern:/(^|[^\\])(\/\*[\w\W]*?\*\/|((#)|(\/\/)).*?(\r?\n|$))/g,lookbehind:!0},string:/("|')(\\?.)*?\1/g,atrule:/\b(And|Given|When|Then|In order to|As an|I want to|As a)\b/g,keyword:/\b(Scenario Outline|Scenario|Feature|Background|Story)\b/g};;
 Prism.languages.csharp=Prism.languages.extend("clike",{keyword:/\b(abstract|as|base|bool|break|byte|case|catch|char|checked|class|const|continue|decimal|default|delegate|do|double|else|enum|event|explicit|extern|false|finally|fixed|float|for|foreach|goto|if|implicit|in|int|interface|internal|is|lock|long|namespace|new|null|object|operator|out|override|params|private|protected|public|readonly|ref|return|sbyte|sealed|short|sizeof|stackalloc|static|string|struct|switch|this|throw|true|try|typeof|uint|ulong|unchecked|unsafe|ushort|using|virtual|void|volatile|while|add|alias|ascending|async|await|descending|dynamic|from|get|global|group|into|join|let|orderby|partial|remove|select|set|value|var|where|yield)\b/g,string:/@?("|')(\\?.)*?\1/g,preprocessor:/^\s*#.*/gm,number:/\b-?(0x)?\d*\.?\d+\b/g});;
 Prism.languages.go=Prism.languages.extend("clike",{keyword:/\b(break|case|chan|const|continue|default|defer|else|fallthrough|for|func|go(to)?|if|import|interface|map|package|range|return|select|struct|switch|type|var)\b/g,builtin:/\b(bool|byte|complex(64|128)|error|float(32|64)|rune|string|u?int(8|16|32|64|)|uintptr|append|cap|close|complex|copy|delete|imag|len|make|new|panic|print(ln)?|real|recover)\b/g,"boolean":/\b(_|iota|nil|true|false)\b/g,operator:/([(){}\[\]]|[*\/%^!]=?|\+[=+]?|-[>=-]?|\|[=|]?|>[=>]?|<(<|[=-])?|==?|&(&|=|^=?)?|\.(\.\.)?|[,;]|:=?)/g,number:/\b(-?(0x[a-f\d]+|(\d+\.?\d*|\.\d+)(e[-+]?\d+)?)i?)\b/gi,string:/("|'|`)(\\?.|\r|\n)*?\1/g}),delete Prism.languages.go["class-name"];;
+
+/**
+ * powershell is from github.com/pezhore/prism-powershell
+ */
+Prism.languages.powershell = {
+        // This comment regex is ugly because prism.js replaces "<" with "&lt;" behind the scenes for some reason
+        'comment': /(\&lt\;#[\w\W]*?#>)|(\#.*)/g,
+
+        'string': /(\@\"[\w\W]*?\"\@)|((\'|\")[\w\W]*?(\'|\"))/g,
+        'keyword': /\b(switch|if|else|while|do|for|return|function|new|try|throw|catch|finally|break|exit|begin|process|end)(?![-\S])?\b/ig,
+        'boolean': /(\$true|\$false)/g,
+
+        // This is for PowerShell Actions, leveraging the theme's pre-defined color scheme for attr-value
+        'attr-value': /(add|get|read|test|start|new|set|write|output|where)-\S*/ig,
+
+        // This is for PowerShell Variables, leveraging the theme's pre-defined color scheme for symbol
+        'symbol': /(?!(\$true|\$false))(\$[a-z|A-Z|0-9|_|-]*)\b/g,
+
+        'number': /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?)\b/g,
+        'operator': /[-+]{1,2}|!|&lt;=?|>=?|={1,3}|(&amp;){1,2}|\|?\||\?|\*|\/|\~|\^|\%|-or|-and|-lt|-le|-gt|-ge|-match|-like/g,
+        'ignore': /&(lt|gt|amp);/gi,
+        'punctuation': /[{}[\];(),.:]/g
+};
 /**
  * Original by Jan T. Sott (http://github.com/idleberg)
  *
