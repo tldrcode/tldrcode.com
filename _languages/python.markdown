@@ -75,5 +75,8 @@ Comments:
           comments
           '''
 
-Hello_World: print "Hello world!"
+Hello_World:
+- Type: Example
+  Example: |-
+    print "Hello world!"
 ---

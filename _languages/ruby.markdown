@@ -68,9 +68,10 @@ Comments:
           many comment
           =end
 
-Hello_World: |
+Hello_World:
+- Type: Example
+  Example: |-
             def h
             puts 'Hello, world!'
             end
-
 ---

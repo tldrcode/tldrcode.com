@@ -79,8 +79,6 @@ Structures:
             default: code; }
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
-Functions: TODO
-
 User_Interface:
 - Type: user_input
   Description: Retrieves from stdin.
@@ -102,7 +100,9 @@ Comments:
   Syntax: "*/many comments/*"
 
 
-Hello_World: |
+Hello_World:
+- Type: Example
+  Example: |-
             public class HelloWorld {
             public static void main(String[] args) {
               System.out.println("Hello, World");

@@ -101,7 +101,9 @@ Comments:
 - Type: Block
   Syntax: "*/many comments/*"
 
-Hello_World: |
+Hello_World:
+- Type:
+  Example: |-
             <!DOCTYPE HTML>
             <html>
             <body>

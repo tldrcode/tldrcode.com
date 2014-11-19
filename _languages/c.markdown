@@ -105,8 +105,6 @@ Structures:
             default: code; }
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
-Functions: TODO
-
 User_Interface:
 - Type: scanf
   Description: Retrieves from stdin and assigns input to a variable. If you're inputting a string don't add the '&.'
@@ -128,10 +126,12 @@ Comments:
   Syntax: "*/many comments/*"
 
 
-Hello_World: |-
-      #include<stdio.h>
-      main()
-      {
-        printf("Hello World");
-        }
+Hello_World:
+- Type: Example
+  Example: |-
+    #include<stdio.h>
+    main()
+    {
+      printf("Hello World");
+    }
 ---
