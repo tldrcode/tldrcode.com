@@ -45,7 +45,7 @@ layout: default
               {% for subcategory in category %}
                 {% if subcategory != category[0] %}
                   {% for type in subcategory %}
-                    <h2><a onclick="toggle_visibility('{{ type.Type }}');">{{ type.Type | strip_newlines }} <i class="icon fa-plus"></i></a></h2>
+                    <h2><a onclick="toggle_visibility('{{ type.Type }}');">{{ type.Type | strip_newlines }} <i class="icon fa-angle-down"></i></a></h2>
                     <div style="display: none;" id='{{ type.Type }}'>
                       {% for section in type %}
                         {% capture sectionname %}{{ section[0] | downcase | capitalize }}{% endcapture %}
