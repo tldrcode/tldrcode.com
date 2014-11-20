@@ -167,8 +167,8 @@ File_IO:
   Example_Description: opens the file output.txt for writing, then writes the message "Hello 10 is an integer, 34.100000 is a number" followed by a newline character
 
 - Type: printf
-  Description: Special case of the fprintf function, that only interacts with stdout. Read information about format strings for more info.
-  Syntax: printf ("text");
+  Description: Special case of the printf function, that only interacts with stdout. Read information about format strings for more info.
+  Syntax: printf ("%d","text");
   Example: printf ("%d", x);
   Example_Description: Writes the value of 'x' to the stdout file.
 
