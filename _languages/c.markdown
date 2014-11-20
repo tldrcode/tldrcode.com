@@ -54,7 +54,7 @@ Structures:
 - Type: for
   Description: Loops as long as the stated conditions are met.
   Syntax: for (variable, statement, increment) {code}
-  Example: for (x, x>5, x+1) {code}
+  Example: for (int x=0; x>5, x++) {code}
   Example_Description: Evaluates 'x' and loops if x is greater than 5.  After each execution the value of x will increase by '+1'.
 
 - Type: switch
