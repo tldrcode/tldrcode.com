@@ -51,8 +51,6 @@ Structures:
   Example: "while x>5: code"
   Example_Description: This code would be executed as long as x is greater than 5 and would repeatedly execute until x wasn't greater than 5.
 
-Functions: TODO
-
 User_Interface:
 - Type: print
   Description: Displays to stdout.
