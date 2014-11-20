@@ -22,7 +22,7 @@ Data_Types:
   Description: 8 bit data type that usually contains characters.
   Syntax: char variable_name;
 
-Structures:
+Flow Control:
 - Type: if
   Description: Executes code if the following statement is true.
   Syntax: if(statement) {code}
@@ -92,7 +92,7 @@ Comments:
   Syntax: //comments
 
 - Type: Block
-  Syntax: "*/many comments/*"
+  Syntax: "/*many comments*/"
 
 
 Hello_World:
