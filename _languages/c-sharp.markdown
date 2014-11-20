@@ -85,24 +85,24 @@ Structures:
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
 User_Interface:
-- Type: console.readline
+- Type: console.ReadLine
   Description: Retrieves from stdin.
   Syntax: console.readline (variable);
   Example: console.readline (x);
   Example_Description: This would import a value for x.
 
-- Type: console.writeline
+- Type: console.WriteLine
   Description: Displays to stdout.
   Syntax: console.writeline (variable_or_text);
   Example: console.writeline (x);
-  Example_Description: Displays the value of 'x.'
+  Example_Description: Displays the value of 'x'.
 
 Comments:
 - Type: Single Line
   Syntax: //comments
 
 - Type: Block
-  Syntax: "*/many comments/*"
+  Syntax: "/*many comments*/"
 
 
 Hello_World:
