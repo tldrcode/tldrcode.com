@@ -47,6 +47,10 @@ Data Types:
            begin.y = 0;
   Example_Description: Defines a struct called point, than creates 2 instances, called begin and end. The x and y members of begin are then set to 0.
 
+- Type: Strings
+  Description: Null-terminated strings. Strings are just arrays of chars
+  Syntax: char string[13] = "Hello World!";
+
 - Type: Pointer
   Description: Data type for storing locations in memory.
   Syntax: typename * ptr_var;
