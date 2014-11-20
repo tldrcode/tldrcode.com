@@ -132,8 +132,14 @@ Flow Control:
   Example_Description: Function returns the product of both of its arguments.
 
 File I/O:
+- Type fopen
+  Description: Opens a file
+  Syntax: FILE * file_ptr = fopen( filename, file_mode);
+  Example: FILE * input_file = fopen("input.txt", "r");
+  Example_Description: Open a file named "input.txt" in read mode, and store the pointer to the file descriptor in input_file.
+
 - Type: fscanf
-  Description: reads data from the file pointed to by fp, into the locations pinted to by the additional arguments.
+  Description: reads data from the file pointed to by fp, into the locations pinted to by the additional arguments. Read information about format strings for more info.
   Example: |-
            int a, b;
            int *B = &b;
@@ -141,14 +147,16 @@ File I/O:
            FILE *ifp = fopen("data.txt", "r");
            fscanf(ifp, "%d %d %s", &a, B, string);
   Example_Description: Reads in two integers and a string from the beginning of data.txt, and store them in the variables a, b, and string, respectively.
+
 - Type: scanf
-  Description: Special case of fscanf that simply uses stdin rather than an arbitrary file.
+  Description: Special case of fscanf that simply uses stdin rather than an arbitrary file. Read information about format strings for more info.
   Syntax: scanf (control_string, &var1, &var2, ...);
   Example: scanf ("%d", &x);
   Example_Description: This would read an integer from stdin and place the value of it into x
+
 - Type fprintf
   Syntax: int fprintf ( FILE * ofp, const char * format, ... ); 
-  Description: Print the message described by format and the additional arguments.
+  Description: Print the message described by format and the additional arguments. Read information about format strings for more info.
   Example: |-
            int x = 10;
            float flt = 34.10;
@@ -156,8 +164,9 @@ File I/O:
            FILE *ofp = fopen("output.txt", "w");
            printf("%s %d is an integer, %f is a number\n", str, x, flt);
   Example_Description: opens the file output.txt for writing, then writes the message "Hello 10 is an integer, 34.100000 is a number" followed by a newline character
+
 - Type: printf
-  Description: Special case of the fprintf function, that only interacts with stdout.
+  Description: Special case of the fprintf function, that only interacts with stdout. Read information about format strings for more info.
   Syntax: printf ("text");
   Example: printf ("%d", x);
   Example_Description: Writes the value of 'x' to the stdout file.
@@ -167,15 +176,15 @@ Comments:
   Syntax: //comments
 
 - Type: Block
-  Syntax: "/*many comments*/"
+  Syntax: "/* many comments */"
 
 
 Hello_World:
 - Type: Example
   Example: |-
     #include<stdio.h>
-    main()
+    int main(int argc, char *argv[])
     {
-      printf("Hello World");
+      printf("Hello World\n");
     }
 ---
