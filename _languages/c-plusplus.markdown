@@ -10,22 +10,27 @@ Data_Types:
 - Type: int
   Description: Declares an integer.
   Syntax: int variable_name;
+  Example: int foo = 1;
 
 - Type: float
   Description:  Declares a variable that's able to harness the power of decimals (accurate up to 7 digits).
   Syntax: float variable_name;
+  Example: float foo = 3.141593;
 
 - Type: double
   Description: Same as float, but is more exact (accurate up to 15 digits).
   Syntax: double variable_name;
+  Example: double foo = 3.1415926535897;
 
 - Type: char
   Description: 8 bit data type that usually contains characters.
   Syntax: char variable_name;
+  Example: char foo = 'b';
 
 - Type: String
   Description: An object that represents sequences of characters.
   Syntax: string variable_name;
+  Example: string foo = "bar";
 
 Structures:
 - Type: if
@@ -36,11 +41,11 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: if(false){...} else {code}
-  Example: |
-    int i = 0;
-    if(i == 1){
-      ...
+  Syntax: if(statement){...} else{code}
+  Example: |-
+    int foo = 0;
+    if(foo == 1){
+      //code
     }
     else{
       //code
@@ -48,17 +53,17 @@ Structures:
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
-  Syntax: |
-    if(boolean_logic){
-      ...
-    }else if (boolean_logic) {
+  Syntax: |-
+    if(statement){
+      //code
+    }else if (statement) {
       //code
     }
-  Example: |
-    int i = 5;
-    if(i < 0){
-      ...
-    }else if (i > 0) {
+  Example: |-
+    int foo = 5;
+    if(foo < 0){
+      //code
+    }else if (foo > 0) {
       //code
     }
   Example_Description: Executes when previous if block doesn't and only if x equals 5.
@@ -116,7 +121,7 @@ Comments:
   Syntax: //comments
 
 - Type: Block
-  Syntax: "*/many comments/*"
+  Syntax: "/*many comments*/"
 
 
 Hello_World:
