@@ -70,6 +70,7 @@ a {
     transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     color: #fff;
     text-decoration: none;
+		cursor: pointer;
 }
 
 a:hover {
@@ -1163,7 +1164,7 @@ body.landing #skel-layers-wrapper {
     padding: 0.40em;
     border-radius: 50%;
     border: 1px solid #fff;
-    cursor: default;
+    cursor: inherit;
 }
 
 #languages .icon {
