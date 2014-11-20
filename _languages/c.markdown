@@ -5,7 +5,7 @@ icon: icon-c
 Language: C
 Language_Description: General purpose, low-level programming language.
 
-Data Types:
+Data_Types:
 - Type: Basic variables
   Description: Declares a variable of one of the basic built-in types.
   Syntax: typename variablename
@@ -25,6 +25,7 @@ Data Types:
   Example: |
            int primes[10] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
            int five = primes[2];
+  Example_Description: Creates and array then indexes on that array
 
 - Type: Struct
   Description: Declares a data type with several member variables. Structs are used to group variables together.
@@ -63,19 +64,19 @@ Data Types:
            a = *pB; //a is now 5, and *pA is also 5
 
 
-Flow Control:
-- Type: if/else if /else
+Flow_Control:
+- Type: "if/else if /else"
   Description: Basic if else statement common to most languages
   Syntax: if(condition) {code} else if (condition2) {code} else {code}
   Example: |
-           if( x == 0)
-           {
-         printf("You don't have any bananas\n");
-       } else if (x < 20) {
-         printf("You have %d bananas\n", x);
-       } else {
-         printf("Woah! You have a lot of bananas!\n");
-       }
+          if( x == 0)
+          {
+            printf("You don't have any bananas\n");
+          } else if (x < 20) {
+            printf("You have %d bananas\n", x);
+          } else {
+            printf("Woah! You have a lot of bananas!\n");
+          }
   Example_Description: This will print out how many bananas the use has (see printf for more info).
 
 - Type: while
@@ -105,7 +106,7 @@ Flow Control:
   Syntax: |
           switch (variable)
           {
-            case var1: 
+            case var1:
               code;
             case var2:
               code;
@@ -123,7 +124,7 @@ Flow Control:
               default:
                 //code;
             }
-  Example_Description: This would initialize x to be 2, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed.
+  Example_Description: "This would initialize x to be 2, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed."
 
 - Type: Function
   Description: For creating and using subroutines.
@@ -131,8 +132,8 @@ Flow Control:
   Example: int product(int a, int b) { return a * b; }
   Example_Description: Function returns the product of both of its arguments.
 
-File I/O:
-- Type fopen
+File_IO:
+- Type: fopen
   Description: Opens a file
   Syntax: FILE * file_ptr = fopen( filename, file_mode);
   Example: FILE * input_file = fopen("input.txt", "r");
@@ -154,8 +155,8 @@ File I/O:
   Example: scanf ("%d", &x);
   Example_Description: This would read an integer from stdin and place the value of it into x
 
-- Type fprintf
-  Syntax: int fprintf ( FILE * ofp, const char * format, ... ); 
+- Type: fprintf
+  Syntax: int fprintf ( FILE * ofp, const char * format, ... );
   Description: Print the message described by format and the additional arguments. Read information about format strings for more info.
   Example: |-
            int x = 10;
