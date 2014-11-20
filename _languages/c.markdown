@@ -61,31 +61,57 @@ Flow Control:
   Description: Allows specific code to be used. Variable used must be an integer and the 'vars' must be constant. The switch will jump to the first case that's equal to your stated variable and do the rest of the codes from there (so it'll skip everything before the first case used).  If none of the cases are equal to your variable then it'll only execute the last section of code (the code following 'default').
   Syntax: |
           switch (variable)
-          {case var1: code;
-          case var2: code;
-          default: code; }
+          {
+            case var1: 
+              code;
+            case var2:
+              code;
+            default:
+              code;
+          }
   Example: |
-          int x = 5
-          var1 = 4
-          var2 = 5
+          int x = 2;
           switch (x)
-            {case var1: code;
-            case var2: code:
-            default: code; }
-  Example_Description: This switch would skip the first line of code and execute everything after that.
+            {
+              case 1:
+                //code;
+              case 2:
+                //code;
+              default:
+                //code;
+            }
+  Example_Description: This would read one line of code, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed.
 
-User_Interface:
+File I/O:
+- Type: fscanf
+  Description: reads data from the file pointed to by fp, into the locations pinted to by the additional arguments.
+  Example: |-
+           int a, b;
+           int *B = &b;
+           char string[10];
+           FILE *ifp = fopen("data.txt", "r");
+           fscanf(ifp, "%d %d %s", &a, B, string);
+  Example_Description: Reads in two integers and a string from the beginning of data.txt, and store them in the variables a, b, and string, respectively.
 - Type: scanf
-  Description: Retrieves from stdin and assigns input to a variable. If you're inputting a string don't add the '&.'
-  Syntax: scanf (input, &variable);
-  Example: scanf (10, x)
-  Example_Description: This would import a value of 10 for 'x.'
-
+  Description: Special case of fscanf that simply uses stdin rather than an arbitrary file.
+  Syntax: scanf (control_string, &var1, &var2, ...);
+  Example: scanf ("%d", &x);
+  Example_Description: This would read an integer from stdin and place the value of it into x
+- Type fprintf
+  Syntax: int fprintf ( FILE * ofp, const char * format, ... ); 
+  Description: Print the message described by format and the additional arguments.
+  Example: |-
+           int x = 10;
+           float flt = 34.10;
+           char str = "Hello";
+           FILE *ofp = fopen("output.txt", "w");
+           printf("%s %d is an integer, %f is a number\n", str, x, flt);
+  Example_Description: opens the file output.txt for writing, then writes the message "Hello 10 is an integer, 34.100000 is a number" followed by a newline character
 - Type: printf
-  Description: Displays to stdout.
+  Description: Special case of the fprintf function, that only interacts with stdout.
   Syntax: printf ("text");
-  Example: printf (x);
-  Example_Description: Displays the value of 'x.'
+  Example: printf ("%d", x);
+  Example_Description: Writes the value of 'x' to the stdout file.
 
 Comments:
 - Type: Single Line
