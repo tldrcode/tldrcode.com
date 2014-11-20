@@ -15,8 +15,19 @@ Data Types:
            char c;
   Example_Description: declares two integers, x and y. y is initialized to 3. declares a floating point variable, f and a char(1 byte) variable c.
 
+- Type: Array
+  Description: For storing a list of things
+  Syntax: |
+          //declaration
+          typename arrayname[ARRAY_SIZE];
+          //access the nth element
+          arrayname[n-1]  //arrays are indexed starting at 0
+  Example: |
+           int primes[10] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};
+           int five = primes[2];
+
 - Type: Struct
-  Description: Declares a data type with several member variables
+  Description: Declares a data type with several member variables. Structs are used to group variables together.
   Syntax: |
           //define the structure
           struct mystruct
@@ -35,6 +46,19 @@ Data Types:
            begin.x = 0;
            begin.y = 0;
   Example_Description: Defines a struct called point, than creates 2 instances, called begin and end. The x and y members of begin are then set to 0.
+
+- Type: Pointer
+  Description: Data type for storing locations in memory.
+  Syntax: typename * ptr_var;
+  Example: |
+           int * pA, *pB;
+           int a = 3, b = 5, c = 0;
+           pA = &a;
+           pB = &b;
+           c = *pA; //c is now 3
+           a = *pB; //a is now 5, and *pA is also 5
+
+
 Flow Control:
 - Type: if/else if /else
   Description: Basic if else statement common to most languages
@@ -42,12 +66,12 @@ Flow Control:
   Example: |
            if( x == 0)
            {
-		     printf("You don't have any bananas\n");
-		   } else if (x < 20) {
-		   	 printf("You have %d bananas\n", x);
-		   } else {
-		     printf("Woah! You have a lot of bananas!\n");
-		   }
+         printf("You don't have any bananas\n");
+       } else if (x < 20) {
+         printf("You have %d bananas\n", x);
+       } else {
+         printf("Woah! You have a lot of bananas!\n");
+       }
   Example_Description: This will print out how many bananas the use has (see printf for more info).
 
 - Type: while
@@ -96,6 +120,12 @@ Flow Control:
                 //code;
             }
   Example_Description: This would initialize x to be 2, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed.
+
+- Type: Function
+  Description: For creating and using subroutines.
+  Syntax: returnType name(int arg1, int arg2, float arg3) { code }
+  Example: int product(int a, int b) { return a * b; }
+  Example_Description: Function returns the product of both of its arguments.
 
 File I/O:
 - Type: fscanf
