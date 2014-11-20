@@ -36,21 +36,19 @@ Data Types:
            begin.y = 0;
   Example_Description: Defines a struct called point, than creates 2 instances, called begin and end. The x and y members of begin are then set to 0.
 Flow Control:
-- Type: if
-  Description: Executes code if the following statement is true.
-  Syntax: if(statement) {code}
-  Example: if(x>5) {code}
-  Example_Description: Code will only be executed if the variable x is greater than 5.
-
-- Type: else
-  Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: else {code}
-
-- Type: else if
-  Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
-  Syntax: else if (statement) {code}
-  Example: else if (x==5) {code}
-  Example_Description: Executes when previous if block doesn't and only if x equals 5.
+- Type: if/else if /else
+  Description: Basic if else statement common to most languages
+  Syntax: if(condition) {code} else if (condition2) {code} else {code}
+  Example: |
+           if( x == 0)
+           {
+		     printf("You don't have any bananas\n");
+		   } else if (x < 20) {
+		   	 printf("You have %d bananas\n", x);
+		   } else {
+		     printf("Woah! You have a lot of bananas!\n");
+		   }
+  Example_Description: This will print out how many bananas the use has (see printf for more info).
 
 - Type: while
   Description: Repeats code as long as statement remains true.
