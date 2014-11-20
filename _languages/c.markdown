@@ -5,23 +5,36 @@ icon: icon-c
 Language: C
 Language_Description: General purpose, low-level programming language.
 
-Data_Types:
-- Type: int
-  Description: Declares an integer.
-  Syntax: int variable_name;
+Data Types:
+- Type: Basic variables
+  Description: Declares a variable of one of the basic built-in types.
+  Syntax: typename variablename
+  Example: |
+           int x, y=3
+           float f;
+           char c;
+  Example_Description: declares two integers, x and y. y is initialized to 3. declares a floating point variable, f and a char(1 byte) variable c.
 
-- Type: float
-  Description:  Declares a variable that's able to harness the power of decimals (accurate up to 7 digits).
-  Syntax: float variable_name;
-
-- Type: double
-  Description: Same as float, but is more exact (acurate up to 15 digits).
-  Syntax: double variable_name;
-
-- Type: char
-  Description: 8 bit data type that usually contains characters.
-  Syntax: char variable_name;
-
+- Type: Struct
+  Description: Declares a data type with several member variables
+  Syntax: |
+          //define the structure
+          struct mystruct
+          {
+            typename membername;
+            ...
+          };
+          //declare an instance
+          struct mystruct instancename;
+  Example: |
+           struct point
+           {
+            int x, y;
+           };
+           struct point begin, end;
+           begin.x = 0;
+           begin.y = 0;
+  Example_Description: Defines a struct called point, than creates 2 instances, called begin and end. The x and y members of begin are then set to 0.
 Flow Control:
 - Type: if
   Description: Executes code if the following statement is true.
@@ -47,14 +60,18 @@ Flow Control:
 
 - Type: do while
   Description: Code executes once and then statement is tested.  If statement remains true the do while will keep looping.
-  Syntax: do while (statement) {code}
-  Example: do while (x>5) {code}
+  Syntax: |
+          do{ code }while(statement);
+  Example: |
+          do{
+            //code
+          } while(x > 5);
   Example_Description: Code will execute once and then test if x is greater than 5.  If it is then it'll loop, if not it'll move on.
 
 - Type: for
   Description: Loops as long as the stated conditions are met.
-  Syntax: for (variable, statement, increment) {code}
-  Example: for (int x=0; x>5, x++) {code}
+  Syntax: for (initialization; condition; increment) {code}
+  Example: for (int x=0; x>5; x++) {code}
   Example_Description: Evaluates 'x' and loops if x is greater than 5.  After each execution the value of x will increase by '+1'.
 
 - Type: switch
@@ -80,7 +97,7 @@ Flow Control:
               default:
                 //code;
             }
-  Example_Description: This would read one line of code, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed.
+  Example_Description: This would initialize x to be 2, then jump to the case 2 label, where it would execute from there until the end of the switch statement. Note: even the code under default: will get executed.
 
 File I/O:
 - Type: fscanf
