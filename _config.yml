@@ -16,3 +16,5 @@ highlighter: pygments
 collections:
   languages:
     output: true
+
+exclude: ['README.md', 'Vagrantfile', 'CNAME', 'LICENSE']
