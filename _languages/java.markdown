@@ -52,8 +52,8 @@ Structures:
 
 - Type: do while
   Description: Code executes once and then statement is tested.  If statement remains true the do while will keep looping.
-  Syntax: do {code} while (statement) 
-  Example: do {code} while (x>5) 
+  Syntax: do {code} while (statement)
+  Example: do {code} while (x>5)
   Example_Description: Code will execute once and then test if x is greater than 5.  If it is then it'll loop, if not it'll move on.
 
 - Type: for
@@ -66,26 +66,26 @@ Structures:
   Description: Allows specific code to be used. Variable used must be an integer and the 'vars' must be constant. The switch will jump to the first case that's equal to your stated variable and do the rest of the codes from there (so it'll skip everything before the first case used). Adding a 'break' statement will exit the switch statement if case is satisfied and prevent additional statements from executing. If none of the cases are equal to your variable then it'll only execute the last section of code (the code following 'default').
   Syntax: |
           switch (variable) {
-            case var1: 
+            case var1:
               code;
               break; //exits switch statement, prevents other cases from executing
-            case var2: 
+            case var2:
               code;
-            default: 
-              code; 
+            default:
+              code;
           }
   Example: |
           int x = 5;
           int var1 = 4;
-          int var2 = 5
+          int var2 = 5;
           switch (x) {
-            case var1: 
+            case var1:
               code;
               break;
-            case var2: 
+            case var2:
               code:
-            default: 
-              code; 
+            default:
+              code;
           }
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
