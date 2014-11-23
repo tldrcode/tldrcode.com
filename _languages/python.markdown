@@ -9,12 +9,13 @@ Data_Types:
 - Type: All
   Description: Python variable types don't have to be declared.  Simply creating a variable and setting it equal (with '=') to a value works.
   Syntax: variable_name = value
+  Example: "x = 5"
 
 Structures:
 - Type: if
   Description: Executes code if the following statement is true.
   Syntax: "if statement: code"
-  Example: "if x>5: code"
+  Example: "if x > 5: code"
   Example_Description: The code will only execute if x is greater than 5.
 
 - Type: if else
@@ -23,26 +24,26 @@ Structures:
           if statement: code
           else: code
   Example: |
-          "if x>5: code
-          else: code"
+          if x > 5: code
+          else: code
   Example_Description: If x is greater than 5 then the code on the first line will be executed.  If x isn't greater than 5 then the second line of code will be executed.
 
-- Type: if elseif
+- Type: if; else if; else
   Description: First evaluates the parameters attached to 'if.' If that returns false then the code moves on to evaluate the 'else if.' If the else if also returns false then the program will execute the last code (the part following 'else').  Only the first statement to return true will be executed!
   Syntax: |
           if statement: code
-          else if statement: code
+          elif statement: code
           else: code
   Example: |
-          if x>5: code
-          else if x<5: code
+          if x > 5: code
+          elif x < 5: code
           else: code
   Example_Description: If x is greater than 5 then the first line will execute.  If x is less than 5 then the second line will execute. If x is 5 then the third line will execute.
 
 - Type: for
   Description: Loops as long as the stated conditions are met.
   Syntax: "for variable in range (start [,stop [,increment]]): code"
-  Example: "for x in range (10, 0, -2): code"
+  Example: "for x in range(10, 0, -2): code"
   Example_Description: Variable 'x' is assigned a value of 10 and after each execution of the code x's value is decreased by 2.  The code will execute until x equals 0.
 
 - Type: while
