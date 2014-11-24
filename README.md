@@ -41,4 +41,5 @@ If you can do any of the above we will be eternally grateful.
 FAQ
 ---
 Q. Why are the language files named `*.markdown` and only contain YAML?
+
 A. They are `.markdown` files because Jekyll will not render a page from a `.yml` file. Jekyll does allow for rendering of a `.markdown` files into multiple pages. The key is that the Markdown files can contain a YAML front matter. We exploit this ability by only having a YAML front matter and nothing in markdown.
