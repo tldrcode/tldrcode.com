@@ -1,7 +1,6 @@
 Vagrant::Config.run do |config|
 
-  config.vm.box = "trusty64-20141121"
-  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/trusty/20141121/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.forward_port 8080, 8080
 
   config.vm.provision :shell,
