@@ -35,30 +35,36 @@ Structures:
   Description: Loops as long as the stated conditions are met.
   Syntax: |
           for statement
-          code
+            code
+          end
   Example: |
-          for x in 0..5
-          code
+           for x in 0..5
+             code
+           end
   Example_Description: X is set at value 0, the code is executed, and x will increase by a value of 1 each execution.  The loop will end once the value of x is greater than 5.
 
 - Type: while
   Description: Repeats code as long as statement remains true.
   Syntax: |
           while statement
-          code
-  Example: |
-            while x>5
             code
+          end
+  Example: |
+           while x>5
+             code
+           end
   Example_Description: This will loop as long as x is greater than 5.
 
 - Type: until
   Description: Code executes until statement returns true.
   Syntax: |
           until statement
-          code
-  Example: |
-            until x>5
             code
+          end
+  Example: |
+           until x>5
+             code
+           end
   Example_Description: The code will execute until x is greater than 5.
 
 Functions: TODO
@@ -68,7 +74,7 @@ User_Interface:
   Description: Displays to stdout.
   Syntax: print "output"
   Example: print "yolo."
-  Example_Description: Displays the message 'yolo.'
+  Example_Description: Displays the message 'yolo.'.
 
 - Type: gets
   Description: Retrieves from stdin.
@@ -76,22 +82,22 @@ User_Interface:
   Example: |
           print "What your name is?"
           name = gets
-  Example_Description: Displays asks for the users name and stores the answer as 'name.'
+  Example_Description: Displays asks for the users name and stores the answer as 'name'.
 
 Comments:
 - Type: Single line
-  Syntax: '#comment'
+  Syntax: '# comment'
 
 - Type: Block
   Syntax: |
           =begin
-          many comment
+            many comment
           =end
 
 Hello_World:
 - Type: Example
   Example: |-
             def h
-            puts 'Hello, world!'
+              puts 'Hello, world!'
             end
 ---
