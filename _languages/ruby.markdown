@@ -11,6 +11,26 @@ Data_Types:
   Syntax: variable_name
 
 Structures:
+- Type: each
+  Description: Loops over a collection using a block.
+  Syntax: |
+          collection.each {|c| code}
+
+          # alternate syntax
+          collection.each do |c|
+            code
+          end
+  Example: |
+          numbers = %w(one two three four)
+          numbers.each {|number| print "#{number} number\n" }
+
+          # alternate syntax
+          numbers.each do |number|
+            print "#{number} number\n"
+          end
+
+  Example_Description: A method for iteration of a collection. The `each` method accepts a block and performs operations on each value.
+
 - Type: for
   Description: Loops as long as the stated conditions are met.
   Syntax: |
