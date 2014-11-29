@@ -30,11 +30,11 @@ you can personally contribute to the project.
 - Submit Issues to our Issue Tracker
 - Correct Issues in our Issue Tracker
 - Add a new Language
-- Help use with some CSS (We're all pretty bad at it)
+- Help us with some CSS (We're all pretty bad at it)
 - Help document
 - Send us pull requests
   - New features
-  - fix our very basic features (Search)
+  - Fix our very basic features (Search)
 
 If you can do any of the above we will be eternally grateful.
 
