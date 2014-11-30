@@ -51,8 +51,8 @@ Structures:
 
 - Type: do while
   Description: Code executes once and then statement is tested.  If statement remains true the do while will keep looping.
-  Syntax: do while (statement) {code}
-  Example: do while (x>5) {code}
+  Syntax: do {code} while (statement)
+  Example: do {code} while (x>5) 
   Example_Description: Code will execute once and then test if x is greater than 5.  If it is then it'll loop, if not it'll move on.
 
 - Type: for
