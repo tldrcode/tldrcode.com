@@ -84,8 +84,8 @@ Functions: TODO
 User_Interface:
 - Type: Prompt
   Description: Displays as a prompt.
-  Syntax: prompt (text_or_prompt, default_value);
-  Example: prompt ("What your name is?, "Type your name here");
+  Syntax: window.prompt (text_or_prompt, default_value);
+  Example: window.prompt ("What your name is?, "Type your name here");
   Example_Description: Displays "What your name is?" and auto-fills the textbox with "Type your name here."
 
 - Type: Alert
@@ -109,7 +109,7 @@ Hello_World:
       <body>
         <p>Header...</p>
         <script>
-          alert('Hello, World!')
+          window.alert('Hello, World!')
         </script>
         <p>...Footer</p>
       </body>
