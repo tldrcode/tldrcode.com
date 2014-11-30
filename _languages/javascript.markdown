@@ -65,17 +65,17 @@ Structures:
   Description: Allows specific code to be used. Variable used must be an integer and the 'vars' must be constant. The switch will jump to the first case that's equal to your stated variable and do the rest of the codes from there (so it'll skip everything before the first case used).  If none of the cases are equal to your variable then it'll only execute the last section of code (the code following 'default').
   Syntax: |
           switch (variable)
-          {case var1: code;
-          case var2: code;
-          default: code; }
+          {case var1: code; break;
+          case var2: code; break;
+          default: code; break;}
   Example: |
           int x = 5
           var1 = 4
           var2 = 5
           switch (x)
-            {case var1: code;
-            case var2: code:
-            default: code; }
+            {case var1: code; break;
+            case var2: code; break;
+            default: code; break;}
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
 
