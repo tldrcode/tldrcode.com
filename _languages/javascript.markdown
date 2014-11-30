@@ -57,9 +57,9 @@ Structures:
 
 - Type: for
   Description: Loops as long as the stated conditions are met.
-  Syntax: for (variable, statement, increment) {code}
-  Example: for (x, x>5, x+1) {code}
-  Example_Description: Evaluates 'x' and loops if x is greater than 5.  After each execution the value of x will increase by '+1'.
+  Syntax: for (variable; statement; increment) {code}
+  Example: for (x; x>5; x+1) {code}
+  Example_Description: Evaluates 'x' and loops if x is greater than 5.  After each execution the value of x will increase by '1'.
 
 - Type: switch
   Description: Allows specific code to be used. Variable used must be an integer and the 'vars' must be constant. The switch will jump to the first case that's equal to your stated variable and do the rest of the codes from there (so it'll skip everything before the first case used).  If none of the cases are equal to your variable then it'll only execute the last section of code (the code following 'default').
