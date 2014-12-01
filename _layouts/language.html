@@ -50,11 +50,11 @@ layout: default
                       {% for section in type %}
                         {% capture sectionname %}{{ section[0] | downcase | capitalize }}{% endcapture %}
                         {% if sectionname == "Syntax" %}
-                          <p>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}
-                          <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre></p>
+                          <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
+                          <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
                         {% elsif sectionname == "Example" %}
-                          <p>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}
-                          <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre></p>
+                          <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
+                          <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
                         {% else %}
                           {% if section[0] != "Type" %}
                             <p>{{ section[1] }}</p>

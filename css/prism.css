@@ -256,6 +256,7 @@ pre[class*='language-'] > code[data-language] {
 	overflow: scroll;
 	max-height: 28em;
 	display: block;
+	font-size: .75em;
 }
 pre[class*='language-'] > code[data-language]::before {
 	content: attr(data-language);
@@ -265,7 +266,7 @@ pre[class*='language-'] > code[data-language]::before {
 	position: absolute;
 	top: 0;
 	right: 0;
-	font-size: 0.9em;
+	font-size: 0.7em;
 	border-radius: 0 0 0 5px;
 	padding: 0 0.5em;
 	text-shadow: none;
