@@ -6,27 +6,22 @@ Language: JavaScript
 Language_Description: Object oriented programming language mostly used to create interactive effects within web browsers.
 
 Data_Types:
-- Type: int
-  Description: Declares an integer.
-  Syntax: int variable_name;
 
-- Type: float
-  Description:  Declares a variable that's able to harness the power of decimals (accurate up to 7 digits).
-  Syntax: float variable_name;
-
-- Type: double
-  Description: Same as float, but is more exact (accurate up to 15 digits).
-  Syntax: double variable_name;
-
-- Type: char
-  Description: 8 bit data type that usually contains characters.
-  Syntax: char variable_name;
+- Type: Number
+  Description: An integer or floating-point value. In JavaScript there is no distincion between the 2 (internally they are all represented as floating point values).
+  Syntax: var1 = 1; var2 = 1.2;
 
 - Type: String
-  Description: An object that represents sequences of characters.
-  Syntax: string variable_name;
+  Description: A sequence of unicode characters used to represent text.
+  Syntax: var3 = 'var';
+
+- Type: Boolean
+  Description: A true/false value.
+  Syntax: var0 = false; var1 = true;
+
 
 Structures:
+
 - Type: if
   Description: Executes code if the following statement is true.
   Syntax: if(statement) {code}
@@ -85,8 +80,8 @@ User_Interface:
 - Type: Prompt
   Description: Displays as a prompt.
   Syntax: window.prompt (text_or_prompt, default_value);
-  Example: window.prompt ("What your name is?, "Type your name here");
-  Example_Description: Displays "What your name is?" and auto-fills the textbox with "Type your name here."
+  Example: window.prompt ("What is your name?, "Type your name here");
+  Example_Description: Displays "What is your name?" and auto-fills the textbox with "Type your name here."
 
 - Type: Alert
   Description: Displays message that must be accepted to continue.
@@ -94,9 +89,11 @@ User_Interface:
   Example: window.alert ("Meth, not even once.");
   Example_Description: This will display a message reading "Meth, not even once" and will require the user to acknowledge the message to continue.
 
+
 Comments:
+
 - Type: Single Line
-  Syntax: //comments
+  Syntax: // comments
 
 - Type: Block
   Syntax: "/* many comments */"
@@ -109,7 +106,7 @@ Hello_World:
       <body>
         <p>Header...</p>
         <script>
-          window.alert('Hello, World!')
+          window.alert('Hello, World!');
         </script>
         <p>...Footer</p>
       </body>
