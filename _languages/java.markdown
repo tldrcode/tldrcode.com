@@ -90,12 +90,6 @@ Structures:
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
 User_Interface:
-- Type: user_input
-  Description: Retrieves from stdin.
-  Syntax: variable = user_input.next();
-  Example: x = user_input.next();
-  Example_Description: This would import a value for x.
-
 - Type: System.out.println
   Description: Displays to stdout.
   Syntax: System.out.println(output);
