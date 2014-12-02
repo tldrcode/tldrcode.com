@@ -73,7 +73,36 @@ Structures:
             default: code; break;}
   Example_Description: This switch would skip the first line of code and execute everything after that.
 
+
+Functions: 
+
+- Type: Anonymous function
+  Description: An unnamed function that is called at runtime.
+  Syntax: function (parameters) { code }
+  Example: function (var1, var2) 
+            {
+              console.log (var1 + var2);
+            }
+
+- Type: Named function
+  Description: A function given a name, to be executed when explicitly called.
+  Syntax: function myFunction (parameters) { code }
+  Example: function addThis (var1, var2) 
+                      {
+                        var total = var1 + var 2;
+
+                        return total;
+                      }
+            addThis(1, 2);
+
+- Type: Immediately invoked function expression (IIFE)
+  Description: A function invoked at runtime, creating its own scope.
+  Syntax: (function(){ code })();
+  Example: (function(){ console.log('code'); })();
+  
+
 User_Interface:
+
 - Type: Prompt
   Description: Displays as a prompt.
   Syntax: window.prompt (text_or_prompt, default_value);
