@@ -1,0 +1,20 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for language in site.languages %}
+    <url>
+        <loc>http://tldrcode.com{{ language.url | remove: 'index.html' }}</loc>
+    </url>
+    {% endfor %}
+
+    {% for page in site.pages %}
+      {% if page.layout != nil %}
+        {% if page.layout != 'feed' %}
+          <url>
+              <loc>http://tldrcode.com{{ page.url | remove: 'index.html' }}</loc>
+          </url>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+</urlset>

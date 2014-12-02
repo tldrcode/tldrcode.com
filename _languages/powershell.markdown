@@ -93,7 +93,9 @@ Comments:
 - Type: Block
   Syntax: '<# much comment #>'
 
-Hello_World: |
+Hello_World:
+- Type: Example
+  Example: |-
             $strString = "Hello World"
             write-host $strString
 ---
