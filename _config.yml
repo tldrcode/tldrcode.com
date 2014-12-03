@@ -7,6 +7,7 @@ baseurl: ""
 url: "http://tldrcode.com"
 twitter_username: https://twitter.com/tldrcode
 github_username:  https://github.com/tldrcode
+github_repo:  https://github.com/tldrcode/tldrcode.com
 
 # Build settings
 markdown: kramdown
