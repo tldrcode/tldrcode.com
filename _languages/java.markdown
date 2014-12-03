@@ -95,6 +95,11 @@ User_Interface:
   Syntax: System.out.println(output);
   Example: System.out.println("the value of 'x' is" + x);
   Example_Description: Displays "The value of x is x_value"
+- Type: System.console().readLine
+  Description: Reads a line from the console
+  Syntax: System.console().readLine();
+  Example: System.out.println(System.console().readLine().toUpperCase());
+  Example_Description: Displays the user input in capital letters
 
 Comments:
 - Type: Single Line
