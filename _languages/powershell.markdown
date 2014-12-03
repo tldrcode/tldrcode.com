@@ -71,8 +71,6 @@ Structures:
           {$x.name; Sx.creationtime}
   Example_Description: This uses a temporary object (x) to read files from 'c:\windows,' name them, and add their creation time.
 
-Functions: TODO
-
 User_Interface:
 - Type: Read-Host
   Description: Displays to stdout and retrieves from stdin.
