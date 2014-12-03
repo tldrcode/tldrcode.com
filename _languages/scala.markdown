@@ -7,7 +7,7 @@ Language_Description: An object-functional language that runs on the JVM.
 Declaring_Variables:
 - Type: Vals
   Description: Declares a variable that cannot be changed after it is set. Types can be inferred so an explicit type doesn't need to be declared.
-  Syntax: val variablename: Type
+  Syntax: "val variablename: Type"
   Example: |
            val apple = 3
            val bacon: String = "yummy"
@@ -15,7 +15,7 @@ Declaring_Variables:
 
 - Type: Vars
   Description: Declares a variable that can be changed after it is initially set. Type is optional as it can usually be inferred.
-  Syntax: var variablename: Type
+  Syntax: "var variablename: Type"
   Example: |
             var sauce = 4
             var wakka: String = "b"
@@ -41,7 +41,7 @@ Flow_Control:
   Syntax: while (statement) {code}
   Example: while (x>5) {code}
   Example_Description: Code will only execute if x is greater than 5 and will keep looping until x isn't greater than 5.
-  
+
 - Type: match
   Description: Will execute one of a selection of cases based on the value of the variable.
   Syntax: variable match { case-statements }
