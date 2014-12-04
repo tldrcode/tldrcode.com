@@ -1,6 +1,7 @@
 ---
 layout: language
 icon: icon-javascript
+permalink: javascript/
 
 Language: JavaScript
 Language_Description: Object oriented programming language mostly used to create interactive effects within web browsers.

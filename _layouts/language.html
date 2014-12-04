@@ -32,7 +32,7 @@ layout: default
 
         {% assign counter = 0 %}
         {% for category in page %}
-          {% if category[0] != "layout" and category[0] != "icon" and category[0] != "Language" and category[0] != "Language_Description" and category[0] != "prism_name" and category[0] != "output" and category[0] != "content" and category[0] != "path" and category[0] != "relative_path" and category[0] != "url" and category[0] != "collection" %}
+          {% if category[0] != "layout" and category[0] != "permalink" and category[0] != "icon" and category[0] != "Language" and category[0] != "Language_Description" and category[0] != "prism_name" and category[0] != "output" and category[0] != "content" and category[0] != "path" and category[0] != "relative_path" and category[0] != "url" and category[0] != "collection" %}
             {% capture modulo %}{{ counter | modulo:3 }}{% endcapture %}
             {% if modulo == '0' or counter == '0' %}
               {% if counter != 0 %}

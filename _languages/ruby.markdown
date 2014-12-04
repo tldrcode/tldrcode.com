@@ -1,6 +1,7 @@
 ---
 layout: language
 icon: icon-ruby
+permalink: ruby/
 
 Language: Ruby
 Language_Description: General purpose, object oriented programming language.
