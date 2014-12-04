@@ -67,8 +67,6 @@ Structures:
            end
   Example_Description: The code will execute until x is greater than 5.
 
-Functions: TODO
-
 User_Interface:
 - Type: print
   Description: Displays to stdout.

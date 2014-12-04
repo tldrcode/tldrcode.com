@@ -1621,3 +1621,19 @@ ul.featured li {
     border-color: #2a2a2a !important;
     color: rgba(255,255,255,1) !important;
 }
+
+/*********************************************************************************/
+/* base64 <-> ascii textarea                                                     */
+/*********************************************************************************/
+
+textarea.text-base64-ascii {
+    -webkit-appearance: none;
+    display: block;
+    background: none;
+    border: solid 2px #555555;
+    border-radius: 0.35em;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.85em;
+    outline: none;
+}
