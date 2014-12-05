@@ -16,7 +16,7 @@
 
 body {
     background: #2a2a2a;
-    color: #4b4c4b;
+    color: #2a2a2a;
 }
 
 body,textarea,select {
@@ -75,7 +75,7 @@ a {
 
 a:hover {
     border-bottom-color: transparent;
-		color: #555;
+		color: #2a2a2a;
 		cursor: pointer;
 }
 
@@ -348,7 +348,7 @@ ul.info h3 {
 
 ul.info a {
     text-decoration: none;
-    color: #4b4c4b;
+    color: #2a2a2a;
 }
 
 ul.info a:hover {
@@ -1381,7 +1381,7 @@ ul.featured li {
 			#content form textarea {
     border-color: #ccc;
     border-color: rgba(0,0,0,.2);
-    color: #4b4c4b;
+    color: #2a2a2a;
     color: rgba(0,0,0,1) !important;
 }
 
@@ -1399,7 +1399,7 @@ ul.featured li {
 #content form .button {
     border-color: #ccc;
     border-color: rgba(0,0,0,0.2);
-    color: #4b4c4b !important;
+    color: #2a2a2a !important;
     color: rgba(0,0,0,0.8) !important;
 }
 
@@ -1454,6 +1454,7 @@ ul.featured li {
     background: #2a2a2a;
     padding: 4em 0 6em 0;
     text-align: center;
+    color: #fff;
 }
 
 #footer h1 span {
@@ -1470,34 +1471,19 @@ ul.featured li {
 }
 
 #footer .icons a:hover {
-    opacity: 0.75;
+    opacity: 1;
 }
 
-#footer .copyright {
-    color: #999;
-    font-size: 0.9em;
-    line-height: 1em;
-    margin: 2em 0 0 0;
-    padding: 0;
-    text-align: center;
+#footer a {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
-#footer .copyright a {
-    color: inherit;
-}
-
-#footer .copyright li {
-    border-left: solid 1px #dddddd;
-    display: inline-block;
-    list-style: none;
-    margin-left: 1em;
-    padding-left: 1em;
-}
-
-#footer .copyright li:first-child {
-    border-left: 0;
-    margin-left: 0;
-    padding-left: 0;
+#footer a:hover {
+  color: #fff;
 }
 
 #footer ul {
@@ -1559,10 +1545,27 @@ ul.featured li {
 /*********************************************************************************/
 
 .copyright {
-    position: relative;
-    padding: 2em 0em 3em 0em;
-    text-align: center;
-    color: rgba(255,255,255,.2);
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 2em 0 0 0;
+  padding: 0;
+  text-align: center;
+  opacity: 0.35;
+}
+
+.copyright li {
+  border-left: solid 1px #dddddd;
+  display: inline-block;
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+.copyright li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /*********************************************************************************/
