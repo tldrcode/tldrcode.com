@@ -1,2 +1,2 @@
-- name: Base64 <-> ASCII
+- name: Base64 &harr; ASCII
   path: /coding_tools/base64-ascii.html
