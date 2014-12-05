@@ -54,30 +54,38 @@ noncategories:
               <div class="row">
             {% endif %}
             <div class="4u">
-              <h1>{{ category[0] | replace:'_',' ' }}</h1>
+              <div class="list-group">
+              <span class="list-group-item active"><h1>{{ category[0] | replace:'_',' ' }}</h1></span>
               {% for subcategory in category %}
                 {% if subcategory != category[0] %}
                   {% for type in subcategory %}
-                    <h2><a onclick="toggle_visibility('{{ type.Type }}');">{{ type.Type | strip_newlines }} <i class="icon fa-angle-down"></i></a></h2>
-                    <div style="display: none;" id='{{ type.Type }}'>
-                      {% for section in type %}
-                        {% capture sectionname %}{{ section[0] | downcase | capitalize }}{% endcapture %}
-                        {% if sectionname == "Syntax" %}
-                          <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
-                          <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
-                        {% elsif sectionname == "Example" %}
-                          <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
-                          <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
-                        {% else %}
-                          {% if section[0] != "Type" %}
-                            <p>{{ section[1] }}</p>
+                    <div class="list-group-item">
+                      <h2><a onclick="toggle_visibility('{{ type.Type }}');">
+                        <div style="width: 100%">{{ type.Type | strip_newlines }}
+                          <i class="icon fa-angle-down" style="float: right"></i>
+                        </div>
+                      </a></h2>
+                      <div style="display: none;" id='{{ type.Type }}'>
+                        {% for section in type %}
+                          {% capture sectionname %}{{ section[0] | downcase | capitalize }}{% endcapture %}
+                          {% if sectionname == "Syntax" %}
+                            <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
+                            <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
+                          {% elsif sectionname == "Example" %}
+                            <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
+                            <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
+                          {% else %}
+                            {% if section[0] != "Type" %}
+                              <p>{{ section[1] }}</p>
+                            {% endif %}
                           {% endif %}
-                        {% endif %}
-                      {% endfor %}
+                        {% endfor %}
+                      </div>
                     </div>
                   {% endfor %}
                 {% endif %}
               {% endfor %}
+            </div>
             </div>
               {% assign counter = counter | plus:1 %}
 	   {% endunless %}
