@@ -2,6 +2,7 @@
 layout: language
 icon: icon-python
 permalink: python/
+featured: True
 
 Language: Python
 Language_Description: General purpose, high-level programming language.

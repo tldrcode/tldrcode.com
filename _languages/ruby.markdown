@@ -2,6 +2,7 @@
 layout: language
 icon: icon-ruby
 permalink: ruby/
+featured: True
 
 Language: Ruby
 Language_Description: General purpose, object oriented programming language.

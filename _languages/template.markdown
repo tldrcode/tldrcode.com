@@ -1,29 +1,33 @@
 ---
-#To use this template please rename the file to the langugage name with the
-#extension of ".markdown"
+# To use this template please rename the file to the langugage name with the
+# extension of ".markdown"
 
-#This allows for the language's page to be rendered correctly
+# This allows for the language's page to be rendered correctly
 layout: language
 
-#Specifiy the icon name here - You can find all available here - http://mfizz.com/oss/font-mfizz
-#If you know of other better font icon libraries we should use tell us
+# Specifiy the icon name here - You can find all available here - http://mfizz.com/oss/font-mfizz
+# If you know of other better font icon libraries we should use tell us
 icon: icon-c
 
 # Permalink - the permanent link for this language for a nice looking URL.
 # Should just be language but all lower case - needs trailing /
 permalink: c/
 
-#Basic language details
+# Determines if the language will be featured on the homepage. There's a limit
+# of 8 featured languages.
+featured: True
+
+# Basic language details
 Language: C
 Language_Description: General purpose, low-level programming language.
 
-#All the data for the language that gets populated on the rendered page
-#This is all in YAML. The basic structure is specified below. You can add new
-#sections and it should automatically add a new section on the page. The section
-#titles will be the what specified below with all the _ replaced with spaces.
+# All the data for the language that gets populated on the rendered page
+# This is all in YAML. The basic structure is specified below. You can add new
+# sections and it should automatically add a new section on the page. The section
+# titles will be the what specified below with all the _ replaced with spaces.
 
-#If you need any with YAML this page should help http://www.yaml.org/refcard.html
-#You can be really awesome and remake this page for TLDR code. *wink wink*
+# If you need any with YAML this page should help http://www.yaml.org/refcard.html
+# You can be really awesome and remake this page for TLDR code. *wink wink*
 
 Data_Types:
 - Type: Basic variables
@@ -93,7 +97,7 @@ Comments:
 Hello_World:
 - Type: Example
   Example: |-
-    #include<stdio.h>
+    # include<stdio.h>
     int main(int argc, char *argv[])
     {
       printf("Hello World\n");

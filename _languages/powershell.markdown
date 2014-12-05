@@ -2,6 +2,7 @@
 layout: language
 icon: icon-shell
 permalink: powershell/
+featured: False
 
 Language: PowerShell
 Language_Description: A task automation and configuration management framework from Microsoft.

@@ -2,6 +2,7 @@
 layout: language
 icon: icon-scala
 permalink: scala/
+featured: True
 
 Language: Scala
 Language_Description: An object-functional language that runs on the JVM.

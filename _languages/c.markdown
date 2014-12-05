@@ -2,6 +2,7 @@
 layout: language
 icon: icon-c
 permalink: c/
+featured: True
 
 Language: C
 Language_Description: General purpose, low-level programming language.

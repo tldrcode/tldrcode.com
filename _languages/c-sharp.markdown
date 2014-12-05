@@ -2,6 +2,7 @@
 layout: language
 icon: icon-csharp
 permalink: csharp/
+featured: True
 
 Language: 'C#'
 Language_Description: An object oriented hybrid of C and C++ designed for Windows development.
