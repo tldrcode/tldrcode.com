@@ -1,6 +1,7 @@
 ---
 layout: language
 icon: icon-python
+permalink: python/
 
 Language: Python
 Language_Description: General purpose, high-level programming language.

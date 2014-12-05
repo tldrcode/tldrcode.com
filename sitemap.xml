@@ -4,7 +4,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for language in site.languages %}
     <url>
-        <loc>http://tldrcode.com{{ language.url | remove: 'index.html' }}</loc>
+        <loc>http://tldrcode.com/{{ language.permalink | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 

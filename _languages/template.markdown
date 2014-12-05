@@ -9,6 +9,10 @@ layout: language
 #If you know of other better font icon libraries we should use tell us
 icon: icon-c
 
+# Permalink - the permanent link for this language for a nice looking URL.
+# Should just be language but all lower case - needs trailing /
+permalink: c/
+
 #Basic language details
 Language: C
 Language_Description: General purpose, low-level programming language.

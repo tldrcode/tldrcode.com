@@ -1,6 +1,7 @@
 ---
 layout: language
 icon: icon-cplusplus
+permalink: c-plusplus/
 
 Language: C++
 Language_Description: Object oriented programming language based on 'C.'

@@ -224,6 +224,7 @@
 
 	#header
 	{
+		display: none;
 		position: relative;
 		text-align: center;
 		padding: 1.5em 0 3em 0;
@@ -374,6 +375,9 @@
 				text-align: center;
 			}
 
+			#footer p {
+				text-align: center;
+			}
 /*********************************************************************************/
 /* Featured                                                                     */
 /*********************************************************************************/
