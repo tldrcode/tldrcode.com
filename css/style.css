@@ -1202,6 +1202,67 @@ ul.featured li {
 }
 
 /*********************************************************************************/
+/* 404 - notfound                                                                */
+/*********************************************************************************/
+
+#notfound {
+    position: relative;
+    padding: 3em 0em 3em 0em;
+    background: #de577b url('images/banner.svg') bottom center no-repeat;
+    background-size: auto 150%;
+    text-align: center;
+    color: #fff;
+}
+
+#notfound h1 {
+    font-size: 10em;
+    line-height: 1em;
+}
+
+#notfound h2 {
+    font-size: 3em;
+}
+
+#notfound .byline {
+    letter-spacing: 0.10em;
+    line-height: 1.4em;
+    font-size: 2em;
+}
+
+#notfound .formerize-placeholder {
+    color: #aaa;
+    color: rgba(255,255,255,0.5);
+}
+
+#notfound ::-webkit-input-placeholder {
+    color: #aaa;
+    color: rgba(255,255,255,0.5);
+}
+
+#notfound :-moz-placeholder {
+    color: #aaa;
+    color: rgba(255,255,255,0.5);
+}
+
+#notfound ::-moz-placeholder {
+    color: #aaa;
+    color: rgba(255,255,255,0.5);
+}
+
+#notfound :-ms-input-placeholder {
+    color: #aaa;
+    color: rgba(255,255,255,0.5);
+}
+
+#notfound ::-moz-focus-inner {
+    border: 0;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
 
