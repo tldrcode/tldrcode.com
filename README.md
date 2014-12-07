@@ -1,5 +1,6 @@
 tldrcode.com
 ============
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/tldrcode/tldrcode.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Don't waste time with syntax; unleash the code!
 
