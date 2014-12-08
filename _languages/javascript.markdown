@@ -32,12 +32,26 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: else {code}
+  Syntax: if(statement){...} else{code}
+  Example: |-
+      int i = 10;
+      if(i == 10){
+        code
+      }else{
+        code
+      }
+  Example_Description: Else code executes if i is not equal to 10.
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
-  Syntax: else if (statement) {code}
-  Example: else if (x==5) {code}
+  Syntax: if(statment) {code} else if(statement) {code}
+  Example: |-
+      int x = 5;
+      if(x == 10) {
+        code
+      }else if (x == 5) {
+        code
+      }
   Example_Description: Executes when previous if block doesn't and only if x equals 5.
 
 - Type: while
