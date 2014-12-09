@@ -68,7 +68,7 @@ a {
     -o-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    color: #2a2a2a;
+    color: #fff;
     text-decoration: none;
 		cursor: pointer;
 }
@@ -77,10 +77,6 @@ a:hover {
     border-bottom-color: transparent;
 		color: #2a2a2a;
 		cursor: pointer;
-}
-
-footer a {
-  color: #FFF;
 }
 
 sub {
@@ -1736,12 +1732,4 @@ textarea.text-base64-ascii {
     max-width: 100%;
     padding: 0.85em;
     outline: none;
-}
-
-/*********************************************************************************/
-/* Topics page                                                                   */
-/*********************************************************************************/
-
-ul bulleted {
-  list-style-type: circle;
 }

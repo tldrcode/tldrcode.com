@@ -4,7 +4,6 @@
   <nav id="nav">
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/topics.html">Programming Topics</a></li>
       <li>
         <a href="">Languages <i class="icon fa-angle-down"></i></a>
         <ul>
@@ -16,8 +15,8 @@
       <li>
         <a href="">Tools <i class="icon fa-angle-down"></i></a>
         <ul>
-          {% for tool in site.tools %}
-            <li><a href="{{ tool.url }}">{{ tool.tool-name }}</a></li>
+          {% for tool in site.data.coding_tools %}
+            <li><a href="{{ tool.path }}">{{ tool.name }}</a></li>
           {% endfor %}
         </ul>
       </li>

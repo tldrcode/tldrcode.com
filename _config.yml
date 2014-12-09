@@ -17,9 +17,5 @@ highlighter: pygments
 collections:
   languages:
     output: true
-  tools:
-    output: true
-
-permalink: /topics/:title
 
 exclude: ['README.md', 'Vagrantfile', 'CNAME', 'LICENSE', '_languages/template.markdown']
