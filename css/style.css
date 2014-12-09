@@ -1353,6 +1353,9 @@ ul.featured li {
 #banner-search-result {
 	width: inherit;
 	display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: .5em;
 }
 
 #banner-search-result a {
