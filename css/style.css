@@ -1350,6 +1350,36 @@ ul.featured li {
     text-align: center;
 }
 
+#banner-search-result {
+	width: inherit;
+	display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: .5em;
+}
+
+#banner-search-result a {
+	color: #2a2a2a;
+}
+
+#banner-search-result a:hover {
+	color: #fff;
+}
+
+#banner-search-result:hover {
+	display: block;
+}
+
+#banner-search-result .dropotron.level-0:before {
+	top: 0.6em;
+}
+
+#banner-search:focus + #banner-search-result {
+	display: block;
+	z-index: 1000;
+	position: absolute;
+}
+
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
