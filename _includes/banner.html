@@ -7,12 +7,13 @@
           <span class="byline">{{ site.description }}</span>
         </header>
       </section>
-      <input name="search" id="banner-search" autocomplete="no" placeholder="Search for code. Examples: python, ruby, c++" type="text" class="text" />
-      <ul id="banner-search-results"></ul>
+      <input id="banner-search" autocomplete="no" placeholder="Search for code. Examples: python, ruby, c++" type="text" class="text" />
+	  <ul class="dropotron level-0 right" id="banner-search-result"></ul>
+
       <script language="JavaScript">
         SimpleJekyllSearch.init({
           searchInput: document.getElementById('banner-search'),
-          resultsContainer: document.getElementById('banner-search-results'),
+          resultsContainer: document.getElementById('banner-search-result'),
           dataSource: '/search.json',
           searchResultTemplate: '<li><a href="{url}">{language}</a></li>',
           noResultsText: 'We don\'t seem to have that one. Maybe you can help by adding it?'
