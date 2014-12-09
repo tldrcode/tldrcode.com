@@ -1353,9 +1353,8 @@ ul.featured li {
 #banner-search-result {
 	width: inherit;
 	display: none;
-  position: absolute;
-  z-index: 1;
   margin-top: .5em;
+  position: absolute;
 }
 
 #banner-search-result a {
@@ -1377,7 +1376,10 @@ ul.featured li {
 #banner-search:focus + #banner-search-result {
 	display: block;
 	z-index: 1000;
-	position: absolute;
+}
+
+#banner-search {
+  text-align:center;
 }
 
 /*********************************************************************************/
