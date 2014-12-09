@@ -39,7 +39,8 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: if(statement)
+  Syntax: |
+          if(statement)
           {
             code
           }
@@ -47,7 +48,8 @@ Structures:
           {
             code
           }
-  Example:  int m = 12;
+  Example: |
+            int m = 12;
             if (m > 10)
             {
               Console.WriteLine("Result 1");
