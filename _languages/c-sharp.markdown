@@ -39,7 +39,26 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: else {code}
+  Syntax: |
+          if(statement)
+          {
+            code
+          }
+          else
+          {
+            code
+          }
+  Example: |
+            int m = 12;
+            if (m > 10)
+            {
+              Console.WriteLine("Result 1");
+            }
+            else
+            {
+              Console.WriteLine("Result 2");
+            }
+  Example_Description: Executes when previous if doesn't.
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
