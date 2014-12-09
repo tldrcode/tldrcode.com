@@ -17,6 +17,8 @@ highlighter: pygments
 collections:
   languages:
     output: true
+  tools:
+    output: true
 
 permalink: /topics/:title
 
