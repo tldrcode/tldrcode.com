@@ -1355,6 +1355,7 @@ ul.featured li {
 	display: none;
   margin-top: .5em;
   position: absolute;
+  z-index: 1000;
 }
 
 #banner-search-result a {
@@ -1375,7 +1376,6 @@ ul.featured li {
 
 #banner-search:focus + #banner-search-result {
 	display: block;
-	z-index: 1000;
 }
 
 #banner-search {
