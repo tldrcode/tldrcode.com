@@ -4,7 +4,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for language in site.languages %}
     <url>
-        <loc>http://tldrcode.com/{{ language.permalink | remove: 'index.html' }}</loc>
+        <loc>{{ site.url }}/{{ language.permalink | remove: 'index.html' }}</loc>
+    </url>
+    {% endfor %}
+
+    {% for tool in site.tools %}
+    <url>
+        <loc>{{ site.url }}{{ tool.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
 
@@ -12,7 +18,7 @@
       {% if page.layout != nil %}
         {% if page.layout != 'feed' %}
           <url>
-              <loc>http://tldrcode.com{{ page.url | remove: 'index.html' }}</loc>
+              <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
           </url>
         {% endif %}
       {% endif %}
