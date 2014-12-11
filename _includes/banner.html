@@ -1,14 +1,15 @@
 <!-- Banner -->
   <div id="banner">
     <div class="container">
+      <script src="/js/jquery.keynav.js"></script>
       <section>
         <header>
           <h2>tl;dr<span>{Code}</span></h2>
           <span class="byline">{{ site.description }}</span>
         </header>
       </section>
-      <input id="banner-search" autocomplete="no" placeholder="Search for a language. Examples: python, ruby, c++" type="text" class="text" />
-	  <ul class="dropotron" id="banner-search-result"></ul>
+      <input id="banner-search" autocomplete="no" placeholder="Search for a language. Examples: python, ruby, c++" type="text" class="text" onkeyup="checkTextField();"/>
+	  <ul class="dropotron" id="banner-search-result" style="display: none;"></ul>
 
       <script language="JavaScript">
         SimpleJekyllSearch.init({
@@ -18,6 +19,18 @@
           searchResultTemplate: '<li><a href="{url}">{language}</a></li>',
           noResultsText: 'We don\'t seem to have that one. Maybe you can help by adding it?'
         })
+        function checkTextField()
+        {
+          // If the value of id search_input is not empty show id search_results otherwise hide it
+          if ($('#banner-search').val() != '')
+          {
+              $('#banner-search-result').show();
+          }
+          else
+          {
+              $('#banner-search-result').hide();
+          }
+        }
       </script>
     </div>
   </div>
