@@ -25,7 +25,7 @@ tool-name: Base64 &harr; ASCII
       </div>
     </div>
 
-    <script language="JavaScript">
+    <script>
       //btoa encodes
       function base64toascii() {
         var base64string = document.getElementById('base64').value;
