@@ -1,7 +1,6 @@
 <!-- Banner -->
   <div id="banner">
     <div class="container">
-      <script src="/js/jquery.keynav.js"></script>
       <section>
         <header>
           <h2>tl;dr<span>{Code}</span></h2>
@@ -17,7 +16,9 @@
           resultsContainer: document.getElementById('banner-search-result'),
           dataSource: '/search.json',
           searchResultTemplate: '<li><a href="{url}">{language}</a></li>',
-          noResultsText: 'We don\'t seem to have that one. Maybe you can help by adding it?'
+          noResultsText: 'We don\'t seem to have that one. Maybe you can help by adding it?',
+          limit: 5,
+          fuzzy: false,
         })
         function checkTextField()
         {
