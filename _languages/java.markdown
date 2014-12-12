@@ -38,12 +38,14 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: if(statement) {
+  Syntax: |-
+          if(statement) {
               code
           } else {
               code
           }
-  Example:  int user = 19;
+  Example:  |-
+            int user = 19;
             if (user <= 20) {
               System.out.println("User is 20 years or younger");
             }
