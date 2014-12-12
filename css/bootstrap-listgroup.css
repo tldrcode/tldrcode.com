@@ -7,7 +7,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #4b4c4b;
+  color: #2a2a2a;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -71,8 +71,8 @@ a.list-group-item:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #4b4c4b;
-  border-color: #4b4c4b;
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
