@@ -4,6 +4,8 @@ tldrcode.com
 
 Don't waste time with syntax; unleash the code!
 
+[tldrcode.com](http://tldrcode.com)
+
 ## About
 After learning the concepts behind programming, learning a new language comes
 down to one thing: syntax. The goal of tl;dr{code} is to be a central hub for
