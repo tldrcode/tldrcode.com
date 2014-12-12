@@ -15,13 +15,9 @@
 /*********************************************************************************/
 
 body {
-    background: #2a2a2a;
     color: #2a2a2a;
-}
-
-body,textarea,select {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 300;
     line-height: 1.65em;
     letter-spacing: -0.015em;
@@ -29,7 +25,7 @@ body,textarea,select {
 
 input {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 300;
     letter-spacing: -0.015em;
 }
@@ -41,7 +37,7 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 h3,h4,h5,h6 {
@@ -55,7 +51,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 strong, b {
     font-weight: 700;
-    color: #2b2c2b;
 }
 
 em, i {
@@ -398,95 +393,6 @@ ol.default li {
     padding-left: 0.25em;
 }
 
-	/* Forms */
-
-form {
-    width: 60%;
-    margin: 0 auto;
-}
-
-form .actions {
-    padding-top: 0;
-}
-
-form .button {
-    border-color: #444;
-    border-color: rgba(255,255,255,0.2);
-}
-
-form .button:hover {
-    background: #fff;
-    background: rgba(255,255,255,0.8);
-    border-color: #fff;
-    border-color: rgba(255,255,255,0.2);
-    color: #000 !important;
-}
-
-form label {
-    display: block;
-}
-
-form input.text,
-			form select,
-			form textarea {
-    -webkit-appearance: none;
-    display: block;
-    background: none;
-    border: solid 2px;
-    border-color: #555555;
-    border-color: rgba(255,255,255,0.2);
-    border-radius: 0.35em;
-    width: 100%;
-    padding: 0.85em;
-    -moz-transition: border-color 0.25s ease-in-out;
-    -webkit-transition: border-color 0.25s ease-in-out;
-    -o-transition: border-color 0.25s ease-in-out;
-    -ms-transition: border-color 0.25s ease-in-out;
-    transition: border-color 0.25s ease-in-out;
-    outline: none;
-    color: #aaa;
-    color: rgba(255,255,255,0.5);
-}
-
-form input.text:focus,
-				form select:focus,
-				form textarea:focus {
-    border-color: #aaa;
-    border-color: rgba(255,255,255,0.4);
-}
-
-form input.text,
-				form select {
-    line-height: 1em;
-}
-
-form textarea {
-    min-height: 10em;
-}
-
-form .formerize-placeholder {
-    color: #555 !important;
-}
-
-form ::-webkit-input-placeholder {
-    color: #555 !important;
-}
-
-form :-moz-placeholder {
-    color: #555 !important;
-}
-
-form ::-moz-placeholder {
-    color: #555 !important;
-}
-
-form :-ms-input-placeholder {
-    color: #555 !important;
-}
-
-form ::-moz-focus-inner {
-    border: 0;
-}
 
 	/* Tables */
 
@@ -731,32 +637,26 @@ body.landing #skel-layers-wrapper {
 
 #header {
     background: #2a2a2a;
-    font-size: 10pt;
-    color: #bbb;
     cursor: default;
     height: 3.25em;
-    left: 0;
     line-height: 3.25em;
     position: fixed;
+    left: 0;
     top: 0;
     width: 100%;
     z-index: 10000;
+    font-size: 12pt;
 }
 
 #header h1 {
-    color: inherit;
-    height: inherit;
     left: 1.25em;
-    line-height: inherit;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    top: 0;
+    font-size: 12pt;
 }
 
 #header h1 a {
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     border: 0;
     letter-spacing: 0.1em;
 }
@@ -943,7 +843,7 @@ body.landing #skel-layers-wrapper {
 }
 
 .dropotron.level-0 {
-    font-size: 0.9em;
+    font-size: 12pt;
     margin: 1em 0 0 0;
 }
 
@@ -1266,7 +1166,7 @@ ul.featured .row {
 
 #banner {
     position: relative;
-    padding: 8em 0em 6em 0em;
+    padding: 10em 0em 6em 0em;
     background: #de577b url('images/banner.svg') bottom center no-repeat;
     background-size: auto 150%;
     text-align: center;
