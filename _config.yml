@@ -22,4 +22,6 @@ collections:
 
 permalink: /topics/:title
 
+permalink: /topics/:title
+
 exclude: ['README.md', 'Vagrantfile', 'CNAME', 'LICENSE', '_languages/template.markdown']
