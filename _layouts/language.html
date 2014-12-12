@@ -41,6 +41,7 @@ noncategories:
                 <h2>{{ page.Language }}</h2>
                 <span class="byline">{{ page.Language_Description }}</span>
               </header>
+            </article>
           </div>
         </div>
 
@@ -56,24 +57,29 @@ noncategories:
             {% endif %}
             <div class="4u">
               <div class="list-group">
-              <span class="list-group-item active"><h1>{{ category[0] | replace:'_',' ' }}</h1></span>
+              <div class="list-group-item active"><h1>{{ category[0] | replace:'_',' ' }}</h1></div>
               {% for subcategory in category %}
                 {% if subcategory != category[0] %}
                   {% for type in subcategory %}
                     <div class="list-group-item">
-                      <h2><a onclick="toggle_visibility('{{ type.Type }}');">
-                        <div style="width: 100%">{{ type.Type | strip_newlines }}
+                      <h2><a style="display: block" onclick="toggle_visibility('{{ type.Type | replace: ' ', '_' }}');">
+			<span style="width: 100%">
+			{{ type.Type | strip_newlines | escape }}
                           <i class="icon fa-angle-down" style="float: right"></i>
-                        </div>
+                        </span>
                       </a></h2>
-                      <div style="display: none;" id='{{ type.Type }}'>
+                      <div style="display: none;" id='{{ type.Type | replace: ' ', '_' }}'>
                         {% for section in type %}
                           {% capture sectionname %}{{ section[0] | downcase | capitalize }}{% endcapture %}
                           {% if sectionname == "Syntax" %}
-                            <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
+			  {% if sectionname != type.Type %}
+			    <h3>{{ sectionname }}</h3>
+			  {% endif %}
                             <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
-                          {% elsif sectionname == "Example" %}
-                            <h3>{% if sectionname != type.Type %}{{ sectionname }}{% endif %}</h3>
+			  {% elsif sectionname == "Example" %}
+                          {% if sectionname != type.Type %}
+			    <h3>{{ sectionname }}</h3>
+			  {% endif %}
                             <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
                           {% else %}
                             {% if section[0] != "Type" %}
@@ -92,7 +98,6 @@ noncategories:
 	   {% endunless %}
         {% endfor %}
       </div>
-      </article>
       <!-- /Content -->
     </div>
   </div>
