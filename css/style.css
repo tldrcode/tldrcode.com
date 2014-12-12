@@ -17,7 +17,7 @@
 body {
     color: #2a2a2a;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 300;
     line-height: 1.65em;
     letter-spacing: -0.015em;
@@ -25,7 +25,7 @@ body {
 
 input {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 300;
     letter-spacing: -0.015em;
 }
@@ -104,12 +104,12 @@ p, ul, ol, dl, table {
 p {
 }
 
-header {
+/*header {
     margin-bottom: 1em;
-}
+}*/
 
 .homepage header {
-    letter-spacing: 0.10em;
+    /*letter-spacing: 0.10em;*/
     text-align: center;
 }
 
@@ -564,7 +564,6 @@ table.default tbody {
 .icon:before {
     display: inline-block;
     font-family: FontAwesome;
-    font-size: 1.25em;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
@@ -581,9 +580,9 @@ table.default tbody {
     padding-top: 0em;
 }
 
-body.landing #skel-layers-wrapper {
+/*body.landing #skel-layers-wrapper {
     padding-top: 0;
-}
+}*/
 
 @-moz-keyframes reveal-header {
     0% {
@@ -645,13 +644,13 @@ body.landing #skel-layers-wrapper {
     top: 0;
     width: 100%;
     z-index: 10000;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 #header h1 {
     left: 1.25em;
     position: absolute;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 #header h1 a {
@@ -668,7 +667,6 @@ body.landing #skel-layers-wrapper {
     right: 0.75em;
     top: 0;
     vertical-align: middle;
-    letter-spacing: 0.1em;
 }
 
 #header nav > ul {
@@ -843,7 +841,7 @@ body.landing #skel-layers-wrapper {
 }
 
 .dropotron.level-0 {
-    font-size: 12pt;
+    font-size: 11pt;
     margin: 1em 0 0 0;
 }
 
@@ -948,7 +946,7 @@ body.landing #skel-layers-wrapper {
     outline: none;
     color: #aaa;
     color: #fff;
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 #header .formerize-placeholder {
@@ -1171,6 +1169,7 @@ ul.featured .row {
     background-size: auto 150%;
     text-align: center;
     color: #fff;
+    font-size: 11pt;
 }
 
 #banner header {
@@ -1290,9 +1289,9 @@ ul.featured .row {
     background: #fff;
 }
 
-#main header {
+/*#main header {
     margin-bottom: 1em;
-}
+}*/
 
 .homepage #main header {
     margin-bottom: 3em;
