@@ -15,12 +15,12 @@ tool-name: Base64 &harr; ASCII
     <div class="row">
       <div class="6u">
         <h1 style="float: right">Base64</h1>
-        <textarea type="text" id="base64" class="text-base64-ascii"></textarea>
+        <textarea id="base64" class="text-base64-ascii"></textarea>
         <br><button type="button" class="button" id="base64toascii" onclick="base64toascii()" style="width: 100%">Convert Base64 to ASCII</button>
       </div>
       <div class="6u">
         <h1>ASCII</h1>
-        <textarea type="text" id="ascii" class="text-base64-ascii"></textarea>
+        <textarea id="ascii" class="text-base64-ascii"></textarea>
         <br><button type="button" class="button" id="asciitobase64" onclick="asciitobase64()" style="width: 100%">Convert ASCII to Base64</button>
       </div>
     </div>
