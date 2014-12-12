@@ -38,7 +38,19 @@ Structures:
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: else {code}
+  Syntax: if(statement) {
+              code
+          } else {
+              code
+          }
+  Example:  int user = 19;
+            if (user <= 20) {
+              System.out.println("User is 20 years or younger");
+            }
+            else {
+              System.out.println("User is older than 20");
+            }
+  Example_Description: Exectues when previous if block doesn't and only if user is not equal to or less than 20.
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
