@@ -7,10 +7,10 @@
           <span class="byline">{{ site.description }}</span>
         </header>
       </section>
-      <input id="banner-search" autocomplete="no" placeholder="Search for a language. Examples: python, ruby, c++" type="text" class="text" onkeyup="checkTextField();"/>
+      <input id="banner-search" autocomplete="off" placeholder="Search for a language. Examples: python, ruby, c++" type="text" class="text" onkeyup="checkTextField();"/>
 	  <ul class="dropotron" id="banner-search-result" style="display: none;"></ul>
 
-      <script language="JavaScript">
+      <script>
         SimpleJekyllSearch.init({
           searchInput: document.getElementById('banner-search'),
           resultsContainer: document.getElementById('banner-search-result'),

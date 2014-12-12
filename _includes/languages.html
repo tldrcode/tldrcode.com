@@ -7,20 +7,24 @@
       {% capture modulo %}{{ counter | modulo:4 }}{% endcapture %}
         {% if language.featured %}
           {% if modulo == '0' and counter != 0 %}
-            </div>
+            </ul>
+	    </li>
           {% endif %}
-          {% if modulo == '0' %}
-            <div class="row">
+	  {% if modulo == '0' %}
+	    <li>
+            <ul class="row">
           {% endif %}
-          <div class="3u">
+          <li class="3u">
               <a href="{{ language.url }}"><span class="pennant"><span class="icon {{ language.icon }}"></span></span></a>
               <h3><a href="{{ language.url }}">{{ language.Language }}</a></h3>
             <p>{{ language.Language_Description }}</p>
-          </div>
+          </li>
           {% assign counter = counter | plus:1 %}
         {% endif %}
-      {% endfor %}
-    </div>
+	{% endfor %}
+	</ul>
+      </li>
+    </ul>
   </div>
 </div>
 <!-- /Languages -->

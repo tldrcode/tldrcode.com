@@ -1188,12 +1188,10 @@ ul.featured {
     text-align: center;
 }
 
-ul.featured li {
-    display: inline-block;
-    width: 22%;
-    margin: 0 2.5% 5% 0;
-    padding: 0em 0.50em;
+ul.featured .row {
+    padding: 20px 0 20px 0;
 }
+
 
 .image.featured {
     display: block;
