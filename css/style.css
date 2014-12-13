@@ -1592,8 +1592,16 @@ ul.featured .row {
     background: #edeff0;
 }
 
-#about header h2 {
-    margin-top: 0.50em;
+#about-wrapper header h2{
+  font-size: 28pt;
+}
+
+#about-wrapper header .byline {
+  display: block;
+  margin: 1em 0 0 0;
+  padding: 0 0 0.5em 0;
+  font-size: 16pt;
+  font-weight: 500;
 }
 
 #about .icon {
