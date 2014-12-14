@@ -1,10 +1,8 @@
-tldrcode.com
+[tldrcode.com](http://tldrcode.com)
 ============
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/tldrcode/tldrcode.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Don't waste time with syntax; unleash the code!
-
-[tldrcode.com](http://tldrcode.com)
 
 ## About
 After learning the concepts behind programming, learning a new language comes
@@ -28,7 +26,7 @@ If you can do any of the above we will be eternally grateful.
 
 ## Running Locally with Vagrant
 If you want to run a local version of the tl;dr{code} with vagrant, install
-[vagrant](https://www.vagrantup.com/). Follow these instructions - 
+[vagrant](https://www.vagrantup.com/). Follow these instructions -
 
     vagrant up
     vagrant ssh
