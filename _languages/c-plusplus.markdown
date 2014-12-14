@@ -34,7 +34,7 @@ Data_Types:
   Syntax: string variable_name;
   Example: string foo = "bar";
 
-Structures:
+Flow_Control:
 - Type: if
   Description: Executes code if the following statement is true.
   Syntax: |
