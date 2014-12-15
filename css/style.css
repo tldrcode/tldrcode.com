@@ -1087,7 +1087,7 @@ ol.default li {
 /******************************************************************************/
 
 .tools{
-  min-height: calc(100vh - 30em);
+  min-height: calc(100vh - 443px);
 }
 
 textarea.text-base64-ascii {
