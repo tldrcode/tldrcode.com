@@ -19,52 +19,40 @@ noncategories:
 {% if page.prism_name %}
 {% assign prism_name =  page.prism_name %}
 {% endif %}
-<!-- Main -->
-  <div id="main">
-    <div class="container">
-      <!-- Content -->
-      <script type="text/javascript">
-      <!--
-          function toggle_visibility(id) {
-             var e = document.getElementById(id);
-             if(e.style.display == 'block')
-                e.style.display = 'none';
-             else
-                e.style.display = 'block';
-          }
-      //-->
-      </script>
-        <div class="row">
-          <div id="content" class="12u">
-            <article>
-              <header>
-                <h2>{{ page.Language }}</h2>
-                <span class="byline">{{ page.Language_Description }}</span>
-              </header>
-            </article>
-          </div>
-        </div>
-
-        {% assign counter = 0 %}
-        {% for category in page %}
-	   {% unless layout.noncategories contains category[0] %}
-            {% capture modulo %}{{ counter | modulo:3 }}{% endcapture %}
-            {% if modulo == '0' or counter == '0' %}
-              {% if counter != 0 %}
-                </div>
-              {% endif %}
-              <div class="row">
-            {% endif %}
-            <div class="4u">
-              <div class="list-group">
+<div id="main"><!-- Main -->
+  <div class="container"><!-- Container -->
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }
+    </script>
+    <div class="row">
+      <div id="content" class="12u">
+        <article>
+          <header>
+            <h2>{{ page.Language }}</h2>
+            <span class="byline">{{ page.Language_Description }}</span>
+          </header>
+        </article>
+      </div>
+    </div>
+    <div id="grid">
+      {% for category in page %}
+        {% unless layout.noncategories contains category[0] %}
+          <div class="grid-item">
+            <div class="list-group">
               <div class="list-group-item active"><h1>{{ category[0] | replace:'_',' ' }}</h1></div>
               {% for subcategory in category %}
                 {% if subcategory != category[0] %}
                   {% for type in subcategory %}
                     <div class="list-group-item">
                       <h2><a style="display: block" onclick="toggle_visibility('{{ type.Type | replace: ' ', '_' }}');">
-			<span style="width: 100%">
-			{{ type.Type | strip_newlines | escape }}
+    	                  <span style="width: 100%">
+    	                    {{ type.Type | strip_newlines | escape }}
                           <i class="icon fa-angle-down" style="float: right"></i>
                         </span>
                       </a></h2>
@@ -72,14 +60,14 @@ noncategories:
                         {% for section in type %}
                           {% capture sectionname %}{{ section[0] | downcase | capitalize }}{% endcapture %}
                           {% if sectionname == "Syntax" %}
-			  {% if sectionname != type.Type %}
-			    <h3>{{ sectionname }}</h3>
-			  {% endif %}
+                    			  {% if sectionname != type.Type %}
+                    			    <h3>{{ sectionname }}</h3>
+                    			  {% endif %}
                             <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
-			  {% elsif sectionname == "Example" %}
-                          {% if sectionname != type.Type %}
-			    <h3>{{ sectionname }}</h3>
-			  {% endif %}
+    	                    {% elsif sectionname == "Example" %}
+                            {% if sectionname != type.Type %}
+    	                        <h3>{{ sectionname }}</h3>
+    	                      {% endif %}
                             <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
                           {% else %}
                             {% if section[0] != "Type" %}
@@ -93,12 +81,15 @@ noncategories:
                 {% endif %}
               {% endfor %}
             </div>
-            </div>
-              {% assign counter = counter | plus:1 %}
-	   {% endunless %}
-        {% endfor %}
-      </div>
-      <!-- /Content -->
+          </div>
+        {% endunless %}
+      {% endfor %}
     </div>
-  </div>
-<!-- /Main -->
+    <script>
+    $("#grid").gridalicious({
+      selector: '.grid-item',
+      width: 350
+    });
+    </script>
+  </div><!-- /Container -->
+</div><!-- /Main -->
