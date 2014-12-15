@@ -3,7 +3,7 @@ layout: default
 tool-name: Base64 &harr; ASCII
 ---
 <div id="main">
-  <div class="container">
+  <div class="container tools">
     <div class="row">
       <div id="content" class="12u">
         <header>
