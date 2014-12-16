@@ -78,6 +78,14 @@ header .byline {
   font-size: 1.8em;
 }
 
+.alignright {
+  text-align: right;
+}
+
+.alignleft {
+  text-align: left;
+}
+
 
 /******************************************************************************/
 /* Links                                                                      */
@@ -1053,14 +1061,6 @@ ol.default li {
 
 #about .icon {
     font-size: 9em;
-}
-
-#about .alignright {
-    text-align: right;
-}
-
-#about .alignleft {
-    text-align: left;
 }
 
 #about .actions {
