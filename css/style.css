@@ -820,8 +820,9 @@ ol.default li {
 
 #main {
     position: relative;
-    padding: 8em 0em 0em;
+    padding: 8em 0em 2em 0em;
     background: #fff;
+    min-height: calc(100vh - 16em);
 }
 
 .homepage #main header {
@@ -833,7 +834,7 @@ ol.default li {
 }
 
 #main header span {
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .homepage #main header p {
@@ -924,7 +925,8 @@ ol.default li {
     background: #2a2a2a;
     padding: 4em 0 6em 0;
     text-align: center;
-    color: #fff;
+    height: 16em;
+    color: #646464;
 }
 
 #footer h1 span {
@@ -932,24 +934,25 @@ ol.default li {
 }
 
 #footer .icons a {
-    -moz-transition: opacity 0.2s ease-in-out;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-    opacity: 0.35;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #646464;
 }
 
 #footer .icons a:hover {
-    opacity: 1;
+    color: #fff;
 }
 
 #footer a {
-  -moz-transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #646464;
 }
 
 #footer a:hover {
@@ -981,10 +984,6 @@ ol.default li {
     padding-right: 0;
 }
 
-#footer ul.icons li .icon {
-    color: inherit;
-}
-
 #footer ul.icons li .icon:before {
     font-size: 1.75em;
 }
@@ -1001,13 +1000,11 @@ ol.default li {
 /******************************************************************************/
 
 .copyright {
-  color: #fff;
   font-size: 0.9em;
   line-height: 1em;
   margin: 2em 0 0 0;
   padding: 0;
   text-align: center;
-  opacity: 0.35;
 }
 
 
@@ -1085,10 +1082,6 @@ ol.default li {
 /******************************************************************************/
 /* Tools                                                                      */
 /******************************************************************************/
-
-.tools{
-  min-height: calc(100vh - 443px);
-}
 
 textarea.text-base64-ascii {
     -webkit-appearance: none;
