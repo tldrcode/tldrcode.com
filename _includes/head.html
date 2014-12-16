@@ -27,9 +27,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@tldrcode">
   <meta name="twitter:creator" content="@tldrcode">
-  {% if page.title %}<meta name="twitter:title" content="{{ page.title }}">{% else %}<meta name="twitter:title" content="{{ site.title }}">{% endif %}
+  {% if page.Language %}<meta name="twitter:title" content="{{ page.Language }}">{% else %}<meta name="twitter:title" content="{{ site.title }}">{% endif %}
   {% if page.url %}<meta name="twitter:url" content="{{ site.url }}/{{ page.permalink }}">{% endif %}
-  {% if page.description %}<meta name="twitter:description" content="{{ page.description | strip_newlines }}">
-  {% else %}<meta name="twitter:description" content="{{ site.description | strip_newlines }}">{% endif %}
+  {% if page.Language_Description %}<meta name="twitter:description" content="{{ page.Language_Description | strip_newlines }}">{% else %}<meta name="twitter:description" content="{{ site.description | strip_newlines }}">{% endif %}
   {% if page.image %}<meta name="twitter:image:src" content="{{ site.url }}/{{ page.image }}">{% else %}<meta name="twitter:image:src" content="{{ site.url }}/tldr-highres.png">{% endif %}
 </head>
