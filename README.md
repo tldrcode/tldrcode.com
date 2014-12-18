@@ -33,7 +33,7 @@ If you want to run a local version of the tl;dr{code} with vagrant, install
     cd /vagrant
     jekyll server --watch -P 8080 --force_polling
 
-Their is a vagrantfile preconfigured in the project directory.
+There is a vagrantfile preconfigured in the project directory.
 
 FAQ
 ---
