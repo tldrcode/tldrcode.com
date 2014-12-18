@@ -26,115 +26,116 @@ Structures:
 
 - Type: if
   Description: Executes code if the following statement is true.
-  Syntax: |-
+  Syntax: |
     if (statement) {
-        // code
+        <code>
     }
-  Example: |-
+  Example: |
     var x = 5;
-    if (x > 5) {
-        // code
+    if (x == 5) {
+      window.alert ("Look at that! X is equal to 5");
     }
-  Example_Description: Code will only be executed if the variable x is greater than 5.
+  Example_Description: Code will only be executed if the variable x is 5.
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: |-
+  Syntax: |
     if (statement) {
-        // ...
+        <code>
     } else {
-        // code
+        <code>
     }
-  Example: |-
+  Example: |
     var i = 10;
-    if (i == 10) {
-      // ...
+    if (i == 11) {
+      window.alert ("Look at that! X is equal to 11");
     } else {
-      // code
+      window.alert ("Look at that! X is not equal to 11");
     }
-  Example_Description: Else code executes if i is not equal to 10.
+  Example_Description: Else code executes if i is not equal to 11.
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
-  Syntax: |-
+  Syntax: |
     if (statement) {
-        // ...
-    } else if(statement) {
-        // code
+      <code>
+    } else if (statement) {
+      <code>
     }
-  Example: |-
+  Example: |
     var x = 5;
     if (x == 10) {
-      // ...
+      window.alert ("Look at that! X is equal to 10");
     } else if (x == 5) {
-      // code
+      window.alert ("Look at that! X is equal to 5");
     }
   Example_Description: Executes when previous if block doesn't and only if x equals 5.
 
 - Type: while
   Description: Repeats code as long as statement remains true.
-  Syntax: |-
+  Syntax: |
     while (statement) {
-        // code
+      <code>
     }
-  Example: |-
-    var x = 5;
-    while (x > 5) {
-        // code
+  Example: |
+    var x = 0;
+    while (x < 5) {
+      window.alert ("Hey I have run " + x + " times");
+      x++;
     }
-  Example_Description: Code will only execute if x is greater than 5 and will keep looping until x isn't greater than 5.
+  Example_Description: Code will only execute if x is less than 5. This will keep looping until x is greater than 5.
 
 - Type: do while
   Description: Code executes once and then statement is tested.  If statement remains true the do while will keep looping.
-  Syntax: |-
+  Syntax: |
     do {
-        // code
+      <code>
     } while (statement)
-  Example: |-
+  Example: |
     var x = 5;
     do {
-        // code
-    } while (x > 5);
-  Example_Description: Code will execute once and then test if x is greater than 5.  If it is then it'll loop, if not it'll move on.
+      window.alert ("Hey look I will still execute once!");
+    } while (x != 5);
+  Example_Description: Code will execute once and then test if x is not equal to 5.  if the statement evaluates to true if will continue to loop, if not it'll move on.
 
 - Type: for
   Description: Loops as long as the stated conditions are met.
-  Syntax: |-
+  Syntax: |
     for (variable; statement; increment) {
-        // code
+      <code>
     }
-  Example: |-
-    for (var x=0; x > 5; x + 1) {
-        // code
+  Example: |
+    for (x=0; x < 5; x++) {
+      window.alert ("Hey I have run " + x + " times");
     }
-  Example_Description: Evaluates 'x' and loops if x is greater than 5.  After each execution the value of x will increase by '1'.
+  Example_Description: Evaluates 'x' and loops if x is less than 5.  After each execution the value of x will increase by '1'.
 
 - Type: switch
   Description: Allows specific code to be used. Variable used must be an integer and the 'vars' must be constant. The switch will jump to the first case that's equal to your stated variable and do the rest of the codes from there (so it'll skip everything before the first case used).  If none of the cases are equal to your variable then it'll only execute the last section of code (the code following 'default').
-  Syntax: |-
+  Syntax: |
     switch (variable) {
     case var1:
-        // code
-        break;
+      <code>
+      break;
     case var2:
-        // code
-        break;
+      <code>
+      break;
     default:
-        // code
-        break;
+      <code>
+      break;
     }
-  Example: |-
+  Example: |
     var x = 5;
     switch (x) {
     case 4:
-        // code
-        break;
+      window.alert ("Look x is equal to " + x);
+      break;
     case 5:
-        // code
-        break;
+      window.alert ("Look x is equal to " + x);
+      break;
     default:
-        // code
-        break;
+      window.alert ("Look x is equal to " + x);
+      break;
     }
   Example_Description: This switch would only execute the code in the 'case 5' block.
 
@@ -143,31 +144,42 @@ Functions:
 
 - Type: Anonymous function
   Description: An unnamed function that is called at runtime.
-  Syntax: function (parameters) { code }
-  Example: function (var1, var2)
-            {
-              console.log (var1 + var2);
-            }
+  Syntax: |
+    function (parameters) {
+      <code>
+    }
+  Example: |
+    function (var1, var2) {
+      console.log (var1 + var2);
+    }
 
 - Type: Named function
   Description: A function given a name, to be executed when explicitly called.
-  Syntax: function myFunction (parameters) { code }
-  Example: function addThis (var1, var2)
-                      {
-                        var total = var1 + var 2;
+  Syntax: |
+    function myFunctionName (parameters) {
+      <code>
+    }
+  Example: |
+    function addThis (var1, var2) {
+      var total = var1 + var 2;
+      return total;
+    }
 
-                        return total;
-                      }
-            addThis(1, 2);
+    addThis(1, 2);
 
 - Type: Immediately invoked function expression (IIFE)
   Description: A function invoked at runtime, creating its own scope.
-  Syntax: (function(){ code })();
-  Example: (function(){ console.log('code'); })();
+  Syntax: |
+    (function(){
+      <code>
+    })();
+  Example: |
+    (function(){
+      console.log('code');
+    })();
 
 
 User_Interface:
-
 - Type: Prompt
   Description: Displays as a prompt.
   Syntax: window.prompt (text_or_prompt, default_value);
@@ -180,9 +192,7 @@ User_Interface:
   Example: window.alert ("Meth, not even once.");
   Example_Description: This will display a message reading "Meth, not even once" and will require the user to acknowledge the message to continue.
 
-
 Comments:
-
 - Type: Single Line
   Syntax: // comments
 
@@ -192,7 +202,7 @@ Comments:
 
 Hello_World:
 - Type: Example
-  Example: |-
+  Example: |
     <!DOCTYPE HTML>
     <html>
       <body>
