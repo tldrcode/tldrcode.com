@@ -26,68 +26,117 @@ Structures:
 
 - Type: if
   Description: Executes code if the following statement is true.
-  Syntax: if(statement) {code}
-  Example: if(x>5) {code}
+  Syntax: |-
+    if (statement) {
+        // code
+    }
+  Example: |-
+    var x = 5;
+    if (x > 5) {
+        // code
+    }
   Example_Description: Code will only be executed if the variable x is greater than 5.
 
 - Type: else
   Description: Follows an if block and will be executed if the if block isn't.
-  Syntax: if(statement){...} else{code}
+  Syntax: |-
+    if (statement) {
+        // ...
+    } else {
+        // code
+    }
   Example: |-
-      int i = 10;
-      if(i == 10){
-        code
-      }else{
-        code
-      }
+    var i = 10;
+    if (i == 10) {
+      // ...
+    } else {
+      // code
+    }
   Example_Description: Else code executes if i is not equal to 10.
 
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
-  Syntax: if(statment) {code} else if(statement) {code}
+  Syntax: |-
+    if (statement) {
+        // ...
+    } else if(statement) {
+        // code
+    }
   Example: |-
-      int x = 5;
-      if(x == 10) {
-        code
-      }else if (x == 5) {
-        code
-      }
+    var x = 5;
+    if (x == 10) {
+      // ...
+    } else if (x == 5) {
+      // code
+    }
   Example_Description: Executes when previous if block doesn't and only if x equals 5.
 
 - Type: while
   Description: Repeats code as long as statement remains true.
-  Syntax: while (statement) {code}
-  Example: while (x>5) {code}
+  Syntax: |-
+    while (statement) {
+        // code
+    }
+  Example: |-
+    var x = 5;
+    while (x > 5) {
+        // code
+    }
   Example_Description: Code will only execute if x is greater than 5 and will keep looping until x isn't greater than 5.
 
 - Type: do while
   Description: Code executes once and then statement is tested.  If statement remains true the do while will keep looping.
-  Syntax: do {code} while (statement)
-  Example: do {code} while (x>5)
+  Syntax: |-
+    do {
+        // code
+    } while (statement)
+  Example: |-
+    var x = 5;
+    do {
+        // code
+    } while (x > 5);
   Example_Description: Code will execute once and then test if x is greater than 5.  If it is then it'll loop, if not it'll move on.
 
 - Type: for
   Description: Loops as long as the stated conditions are met.
-  Syntax: for (variable; statement; increment) {code}
-  Example: for (x; x>5; x+1) {code}
+  Syntax: |-
+    for (variable; statement; increment) {
+        // code
+    }
+  Example: |-
+    for (var x=0; x > 5; x + 1) {
+        // code
+    }
   Example_Description: Evaluates 'x' and loops if x is greater than 5.  After each execution the value of x will increase by '1'.
 
 - Type: switch
   Description: Allows specific code to be used. Variable used must be an integer and the 'vars' must be constant. The switch will jump to the first case that's equal to your stated variable and do the rest of the codes from there (so it'll skip everything before the first case used).  If none of the cases are equal to your variable then it'll only execute the last section of code (the code following 'default').
-  Syntax: |
-          switch (variable)
-          {case var1: code; break;
-          case var2: code; break;
-          default: code; break;}
-  Example: |
-          int x = 5
-          var1 = 4
-          var2 = 5
-          switch (x)
-            {case var1: code; break;
-            case var2: code; break;
-            default: code; break;}
-  Example_Description: This switch would skip the first line of code and execute everything after that.
+  Syntax: |-
+    switch (variable) {
+    case var1:
+        // code
+        break;
+    case var2:
+        // code
+        break;
+    default:
+        // code
+        break;
+    }
+  Example: |-
+    var x = 5;
+    switch (x) {
+    case 4:
+        // code
+        break;
+    case 5:
+        // code
+        break;
+    default:
+        // code
+        break;
+    }
+  Example_Description: This switch would only execute the code in the 'case 5' block.
 
 
 Functions:
