@@ -26,12 +26,14 @@ If you can do any of the above we will be eternally grateful.
 
 ## Running Locally with Vagrant
 If you want to run a local version of the tl;dr{code} with vagrant, install
-[vagrant](https://www.vagrantup.com/). Follow these instructions -
+[vagrant](https://www.vagrantup.com/) and change to the tldrcode.com project directory. Follow these instructions -
 
     vagrant up
     vagrant ssh
     cd /vagrant
     jekyll server --watch -P 8080 --force_polling
+
+Their is a vagrantfile preconfigured in the project directory.
 
 FAQ
 ---
