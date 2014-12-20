@@ -680,29 +680,49 @@ ol.default li {
 /******************************************************************************/
 
 #notfound {
-    position: relative;
-    padding: 3em 0em 3em 0em;
-    background: #de577b url('images/banner.svg') bottom center no-repeat;
-    background-size: auto 150%;
-    text-align: center;
-    color: #fff;
+  position: relative;
 }
 
-#notfound h1 {
-    font-size: 10em;
-    line-height: 1em;
+#notfound .container {
 }
 
-#notfound h2 {
-    font-size: 3em;
+.homepage #notfound {
+  text-align: center;
 }
 
-#notfound .byline {
-    letter-spacing: 0.10em;
-    line-height: 1.4em;
-    font-size: 2em;
+#notfound h3 {
+  display: block;
+  padding: 1.5em 0em 1.5em 0em;
+  font-size: 1.3em;
 }
 
+#notfound .pennant {
+  border-color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2em;
+  padding: 0.40em;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  cursor: inherit;
+}
+
+#notfound .icon {
+  border-color: #2a2a2a;
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  line-height: 3em;
+  font-size: 1.8em;
+  color: #2a2a2a;
+}
+
+#notfound .actions {
+  padding-top: 1em;
+}
 
 /*********************************************************************************/
 /* Banner                                                                        */
