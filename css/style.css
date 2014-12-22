@@ -97,14 +97,14 @@ a {
     -o-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    color: #fff;
+    color: #2a2a2a;
     text-decoration: none;
 		cursor: pointer;
 }
 
 a:hover {
     border-bottom-color: transparent;
-		color: #2a2a2a;
+		color: #de577b;
 		cursor: pointer;
 }
 
@@ -646,6 +646,10 @@ ol.default li {
     font-size: 1.3em;
 }
 
+#languages h3 a:hover{
+  color: #2a2a2a;
+}
+
 #languages .pennant {
     border-color: #fff;
     position: relative;
@@ -1117,4 +1121,20 @@ textarea.text-base64-ascii {
     max-width: 100%;
     padding: 0.85em;
     outline: none;
+}
+
+
+/******************************************************************************/
+/* Contributors                                                               */
+/******************************************************************************/
+
+#contributors {
+  padding-bottom: 2em;
+}
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
 }
