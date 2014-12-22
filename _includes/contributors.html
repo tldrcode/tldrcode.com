@@ -1,19 +1,28 @@
-<div id="contributors">
-    {% assign counter = 0 %}
-    {% for contributor in site.data.contributors %}
-    {% capture modulo %}{{ counter | modulo:4 }}{% endcapture %}
-    {% if modulo == '0' and counter != 0 %}
-      </div>
-    {% endif %}
-    {% if modulo == '0' %}
-      <div class="row">
-    {% endif %}
-    <div class="3u align-center">
-      <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" alt="user avatar" class="circular"></a>
-      <h1><a href="{{ contributor.html_url }}">{{ contributor.login }}</a></h1>
-      <p>Contributions: {{ contributor.contributions }}</p>
-    </div>
-    {% assign counter = counter | plus:1 %}
-    {% endfor %}
-  </div>
-</div>
+<div id="contributors" class="row"></div>
+
+<script>
+  $(function(){
+    var apiurl = 'https://api.github.com/repos/tldrcode/tldrcode.com/contributors';
+    var outhtml = "";
+    requestJSON(apiurl, function(json)
+  {
+    var contributors = json;
+    $.each(contributors, function(index) {
+      outhtml = outhtml + '<div class="3u align-center">';
+      outhtml = outhtml + '<a href="'+contributors[index].html_url+'"><img src="'+contributors[index].avatar_url+'" alt="user avatar" class="circular"></a>';
+      outhtml = outhtml + '<h1><a href="'+contributors[index].html_url+'">'+contributors[index].login+'</a></h1>';
+      outhtml = outhtml + '<p>Contributions: '+contributors[index].contributions+'</p>';
+      outhtml = outhtml + '</div>';
+    });
+    $('#contributors').html(outhtml);
+  });
+  function requestJSON(url, callback) {
+    $.ajax({
+      url: url,
+      complete: function(xhr) {
+        callback.call(null, xhr.responseJSON);
+      }
+    });
+  }
+  });
+</script>
