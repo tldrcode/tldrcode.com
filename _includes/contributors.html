@@ -1,0 +1,19 @@
+<div id="contributors">
+    {% assign counter = 0 %}
+    {% for contributor in site.data.contributors %}
+    {% capture modulo %}{{ counter | modulo:4 }}{% endcapture %}
+    {% if modulo == '0' and counter != 0 %}
+      </div>
+    {% endif %}
+    {% if modulo == '0' %}
+      <div class="row">
+    {% endif %}
+    <div class="3u align-center">
+      <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" alt="user avatar" class="circular"></a>
+      <h1><a href="{{ contributor.html_url }}">{{ contributor.login }}</a></h1>
+      <p>Contributions: {{ contributor.contributions }}</p>
+    </div>
+    {% assign counter = counter | plus:1 %}
+    {% endfor %}
+  </div>
+</div>
