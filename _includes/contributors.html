@@ -1,4 +1,4 @@
-<div id="contributors" class="row"></div>
+<div id="contributors"></div>
 
 <script>
   $(function(){
@@ -7,13 +7,21 @@
     requestJSON(apiurl, function(json)
   {
     var contributors = json;
+    var counter = 0;
+    outhtml = outhtml + '<div class="row">'
     $.each(contributors, function(index) {
+      if(counter % 4 == 0 && counter != 0){
+        outhtml = outhtml + '</div>'
+        outhtml = outhtml + '<div class="row">'
+      }
       outhtml = outhtml + '<div class="3u align-center">';
       outhtml = outhtml + '<a href="'+contributors[index].html_url+'"><img src="'+contributors[index].avatar_url+'" alt="user avatar" class="circular"></a>';
       outhtml = outhtml + '<h1><a href="'+contributors[index].html_url+'">'+contributors[index].login+'</a></h1>';
       outhtml = outhtml + '<p>Contributions: '+contributors[index].contributions+'</p>';
       outhtml = outhtml + '</div>';
+      counter++;
     });
+    outhtml = outhtml + '</div>'
     $('#contributors').html(outhtml);
   });
   function requestJSON(url, callback) {

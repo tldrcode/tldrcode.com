@@ -646,6 +646,10 @@ ol.default li {
     font-size: 1.3em;
 }
 
+#languages h3 a:hover{
+  color: #2a2a2a;
+}
+
 #languages .pennant {
     border-color: #fff;
     position: relative;
