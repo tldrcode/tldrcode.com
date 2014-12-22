@@ -96,7 +96,7 @@ Flow_Control:
   Example_Description: This while loop will increase x by one until x is no longer less than 5.
 
 User_Interface:
-- Type: print (Python 3.x)
+- Type: Print (Python 3.x)
   Description: Displays to stdout.
   Syntax: 'print("text", var)'
   Example: |
@@ -104,7 +104,7 @@ User_Interface:
     print("The value is: ", x)
   Example_Description: 'Will print the string "The value is: 5"'
 
-- Type: print (Python 2.x)
+- Type: Print (Python 2.x)
   Description: Displays to stdout.
   Syntax: 'print "text", var'
   Example: |
@@ -112,11 +112,17 @@ User_Interface:
     print "The value is: ", x
   Example_Description: 'Will print the string "The value is: 5"'
 
-- Type: raw_input
+- Type: Input (Python 3.x)
+  Description: Retrieves from stdin.
+  Syntax: input("prompt")
+  Example: foo = input("What your name is?")
+  Example_Description: This line will output "What your name is?" and will store the users response in the variable foo.
+
+- Type: Input (Python 2.x)
   Description: Retrieves from stdin.
   Syntax: raw_input("prompt")
-  Example: raw_input("What your name is?")
-  Example_Description: This line will output "What your name is?" and allow a user to enter their name.
+  Example: foo = raw_input("What your name is?")
+  Example_Description: This line will output "What your name is?" and will store the users response in the variable foo.
 
 
 Comments:
