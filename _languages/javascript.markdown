@@ -57,11 +57,11 @@ Structures:
 - Type: else if
   Description: Follows an if block and will be executed if the previous if block wasn't executed and the new parameters are met.
   Syntax: |
-    if (statement) {
-      <code>
-    } else if (statement) {
-      <code>
-    }
+  if (statement) {
+    <code>
+  } else if (statement) {
+    <code>
+  }
   Example: |
     var x = 5;
     if (x == 10) {
