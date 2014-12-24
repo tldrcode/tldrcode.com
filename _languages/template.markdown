@@ -1,11 +1,11 @@
 ---
-# To use this template please rename the file to the langugage name with the
+# To use this template please rename the file to the language name with the
 # extension of ".markdown"
 
 # This allows for the language's page to be rendered correctly
 layout: language
 
-# Specifiy the icon name here - You can find all available here - http://mfizz.com/oss/font-mfizz
+# Specify the icon name here - You can find all available here - http://mfizz.com/oss/font-mfizz
 # If you know of other better font icon libraries we should use tell us
 icon: icon-c
 
