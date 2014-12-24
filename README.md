@@ -11,16 +11,16 @@ programming syntax, allowing developers to focus more on the code itself.
 
 Contributions
 -------------
-For those looking to contribute this section is for you. We need people like you to keep this site accurate and up-to-date. Below is a list of ways you can personally contribute to the project.
+For those looking to contribute, this section is for you! We need people like you to keep this site accurate and up-to-date. Below is a list of ways you can personally contribute to the project.
 
 - Submit Issues to our Issue Tracker
 - Correct Issues in our Issue Tracker
 - Add a new Language
-- Help us with some CSS (We're all pretty bad at it)
-- Help document
+- Correct/expand existing languages
+- Create site documentation
 - Send us pull requests
   - New features
-  - Fix our very basic features (Search)
+  - Fix our existing features
 
 If you can do any of the above we will be eternally grateful.
 
@@ -43,6 +43,7 @@ A. They are `.markdown` files because Jekyll will not render a page from a `.yml
 
 ## Site Colors
 - Dark Gray: #2a2a2a
+- Light Gray: #646464
 - Pink: #de577b
 - Mint: #3fa38d
 - Off White: #edeff0
