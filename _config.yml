@@ -20,4 +20,4 @@ collections:
   tools:
     output: true
 
-exclude: ['README.md', 'Vagrantfile', 'CNAME', 'LICENSE', '_languages/template.markdown', 'vendor']
+exclude: ['README.md', 'Vagrantfile', 'CNAME', 'LICENSE', '_languages/template.markdown', 'vendor', 'scripts']
