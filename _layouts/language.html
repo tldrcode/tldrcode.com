@@ -50,7 +50,7 @@ noncategories:
                 {% if subcategory != category[0] %}
                   {% for type in subcategory %}
                     <div class="list-group-item">
-                      <h2><a href="#" style="display: block" onclick="toggle_visibility('{{ type.Type | replace: ' ', '_' }}');">
+                      <h2><a href="javascript:;" style="display: block" onclick="toggle_visibility('{{ type.Type | replace: ' ', '_' }}');">
     	                  <span style="width: 100%">
     	                    {{ type.Type | strip_newlines | escape }}
                           <i class="icon fa-angle-down" style="float: right"></i>
