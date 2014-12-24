@@ -1,7 +1,7 @@
 [tldrcode.com](http://tldrcode.com)
 ============
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/tldrcode/tldrcode.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[]![TravisCI Status](https://travis-ci.org/tldrcode/tldrcode.com.svg)](https://travis-ci.org/tldrcode/tldrcode.com)
+[![TravisCI Status](https://travis-ci.org/tldrcode/tldrcode.com.svg)](https://travis-ci.org/tldrcode/tldrcode.com)
 
 Don't waste time with syntax; unleash the code!
 
