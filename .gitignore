@@ -4,3 +4,5 @@ _site/
 .vagrant/
 
 *.swp
+
+Gemfile.lock

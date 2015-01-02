@@ -30,11 +30,18 @@ If you want to run a local version of the tl;dr{code} with vagrant, install
 [vagrant](https://www.vagrantup.com/) and change to the tldrcode.com project directory. Follow these instructions -
 
     vagrant up
-    vagrant ssh
-    cd /vagrant
-    jekyll server --watch -P 8080 --force_polling
+    # This command is run automatically by the Vagrant provisioner whenever the
+    # machine comes up, no need to do this manually
+    cd /vagrant; jekyll server --watch -P 8080 --force_polling
 
 There is a vagrantfile preconfigured in the project directory.
+
+If you want to run the same `HTML-Proofer` we run for Travis-CI in the vagrant
+box -
+
+    vagrant ssh
+    cd /vagrant
+    htmlproof ./_site --href_ignore "#"
 
 FAQ
 ---
