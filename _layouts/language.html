@@ -71,7 +71,7 @@ noncategories:
                             <pre><code class="language-{{ prism_name }}">{{ section[1] | escape }}</code></pre>
                           {% else %}
                             {% if section[0] != "Type" %}
-                              <p>{{ section[1] }}</p>
+                              <p>{{ section[1] | escape }}</p>
                             {% endif %}
                           {% endif %}
                         {% endfor %}
