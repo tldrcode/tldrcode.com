@@ -140,13 +140,13 @@ File_IO:
 - Type: Read
   Description: Open a file for reading.
   Syntax: file_object = open(filename, access_mode)
-  Example: foo = open('file.txt', 'r'))
+  Example: foo = open('file.txt', 'r')
   Example_Description: This will open file.txt in read only mode.
 
 - Type: Write
   Description: Open a file for writing.
   Syntax: file_object = open(filename, access_mode)
-  Example: foo = open('file.txt', 'w'))
+  Example: foo = open('file.txt', 'w')
   Example_Description: Opens file.txt for writing. Overwrites file if it exists and creates the file it does not.
 
 Hello_World:
